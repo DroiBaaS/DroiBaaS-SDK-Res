@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">AppId:</string>
+    <string name="feedback_text">意见反馈</string>
+    <string name="feedback_userid_text">Userid:</string>
+    <string name="feedback_set_userid_text">设置userid</string>
+    <string name="feedback_set_userid_as_text">设置userid为:</string>
+    <string name="user_defined_text">设置自定义</string>
+    <string name="set_default_text">设为默认</string>
+
+</resources>
