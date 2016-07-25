@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6A4BC481CED6F4800392256 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC471CED6F4800392256 /* main.m */; };
+		F6A4BC4B1CED6F4800392256 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC4A1CED6F4800392256 /* AppDelegate.m */; };
+		F6A4BC511CED6F4800392256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC4F1CED6F4800392256 /* Main.storyboard */; };
+		F6A4BC531CED6F4800392256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC521CED6F4800392256 /* Assets.xcassets */; };
+		F6A4BC561CED6F4800392256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC541CED6F4800392256 /* LaunchScreen.storyboard */; };
+		F6A4BC611CED6F4800392256 /* DroiAnalyticsDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC601CED6F4800392256 /* DroiAnalyticsDemo2Tests.m */; };
+		F6A4BC6C1CED6F4800392256 /* DroiAnalyticsDemo2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC6B1CED6F4800392256 /* DroiAnalyticsDemo2UITests.m */; };
+		F6A4BC821CED70AF00392256 /* DroiAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A4BC801CED70AF00392256 /* DroiAnalytics.framework */; };
+		F6A4BC841CED70C300392256 /* DroiCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A4BC811CED70AF00392256 /* DroiCoreSDK.framework */; };
+		F6A4BC851CED70C300392256 /* DroiCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6A4BC811CED70AF00392256 /* DroiCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6A4BC8F1CED711000392256 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC871CED711000392256 /* LICENSE */; };
+		F6A4BC901CED711000392256 /* baas_cli in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC891CED711000392256 /* baas_cli */; };
+		F6A4BC911CED711000392256 /* DroiBaaS.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC8C1CED711000392256 /* DroiBaaS.m */; };
+		F6A4BC921CED711000392256 /* DroiBaaS.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC8D1CED711000392256 /* DroiBaaS.plist */; };
+		F6A4BC931CED711000392256 /* DroiBaaSForSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC8E1CED711000392256 /* DroiBaaSForSwift.swift */; };
+		F6A4BC9F1CED909400392256 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC961CED909400392256 /* BlueViewController.m */; };
+		F6A4BCA01CED909400392256 /* BlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC971CED909400392256 /* BlueViewController.xib */; };
+		F6A4BCA21CED909400392256 /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC9B1CED909400392256 /* GreenViewController.m */; };
+		F6A4BCA31CED909400392256 /* GreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BC9C1CED909400392256 /* GreenViewController.xib */; };
+		F6A4BCA41CED909400392256 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BC9E1CED909400392256 /* ViewController.m */; };
+		F6A4BCA81CED910500392256 /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4BCA61CED910500392256 /* RedViewController.m */; };
+		F6A4BCA91CED910500392256 /* RedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A4BCA71CED910500392256 /* RedViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6A4BC5D1CED6F4800392256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A4BC3B1CED6F4800392256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A4BC421CED6F4800392256;
+			remoteInfo = DroiAnalyticsDemo2;
+		};
+		F6A4BC681CED6F4800392256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6A4BC3B1CED6F4800392256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6A4BC421CED6F4800392256;
+			remoteInfo = DroiAnalyticsDemo2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6A4BC7D1CED704400392256 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F6A4BC851CED70C300392256 /* DroiCoreSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F6A4BC431CED6F4800392256 /* DroiAnalyticsDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroiAnalyticsDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A4BC471CED6F4800392256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6A4BC491CED6F4800392256 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6A4BC4A1CED6F4800392256 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6A4BC501CED6F4800392256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6A4BC521CED6F4800392256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6A4BC551CED6F4800392256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6A4BC571CED6F4800392256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A4BC5C1CED6F4800392256 /* DroiAnalyticsDemo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroiAnalyticsDemo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A4BC601CED6F4800392256 /* DroiAnalyticsDemo2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroiAnalyticsDemo2Tests.m; sourceTree = "<group>"; };
+		F6A4BC621CED6F4800392256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A4BC671CED6F4800392256 /* DroiAnalyticsDemo2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroiAnalyticsDemo2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A4BC6B1CED6F4800392256 /* DroiAnalyticsDemo2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DroiAnalyticsDemo2UITests.m; sourceTree = "<group>"; };
+		F6A4BC6D1CED6F4800392256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A4BC801CED70AF00392256 /* DroiAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiAnalytics.framework; sourceTree = "<group>"; };
+		F6A4BC811CED70AF00392256 /* DroiCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiCoreSDK.framework; sourceTree = "<group>"; };
+		F6A4BC871CED711000392256 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F6A4BC891CED711000392256 /* baas_cli */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = baas_cli; sourceTree = "<group>"; };
+		F6A4BC8B1CED711000392256 /* DroiBaaS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DroiBaaS.h; sourceTree = "<group>"; };
+		F6A4BC8C1CED711000392256 /* DroiBaaS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DroiBaaS.m; sourceTree = "<group>"; };
+		F6A4BC8D1CED711000392256 /* DroiBaaS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DroiBaaS.plist; sourceTree = "<group>"; };
+		F6A4BC8E1CED711000392256 /* DroiBaaSForSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroiBaaSForSwift.swift; sourceTree = "<group>"; };
+		F6A4BC951CED909400392256 /* BlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		F6A4BC961CED909400392256 /* BlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		F6A4BC971CED909400392256 /* BlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueViewController.xib; sourceTree = "<group>"; };
+		F6A4BC9A1CED909400392256 /* GreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenViewController.h; sourceTree = "<group>"; };
+		F6A4BC9B1CED909400392256 /* GreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenViewController.m; sourceTree = "<group>"; };
+		F6A4BC9C1CED909400392256 /* GreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenViewController.xib; sourceTree = "<group>"; };
+		F6A4BC9D1CED909400392256 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6A4BC9E1CED909400392256 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6A4BCA51CED910500392256 /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
+		F6A4BCA61CED910500392256 /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
+		F6A4BCA71CED910500392256 /* RedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6A4BC401CED6F4800392256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A4BC841CED70C300392256 /* DroiCoreSDK.framework in Frameworks */,
+				F6A4BC821CED70AF00392256 /* DroiAnalytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A4BC591CED6F4800392256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A4BC641CED6F4800392256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6A4BC3A1CED6F4800392256 = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC451CED6F4800392256 /* DroiAnalyticsDemo2 */,
+				F6A4BC5F1CED6F4800392256 /* DroiAnalyticsDemo2Tests */,
+				F6A4BC6A1CED6F4800392256 /* DroiAnalyticsDemo2UITests */,
+				F6A4BC441CED6F4800392256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6A4BC441CED6F4800392256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC431CED6F4800392256 /* DroiAnalyticsDemo2.app */,
+				F6A4BC5C1CED6F4800392256 /* DroiAnalyticsDemo2Tests.xctest */,
+				F6A4BC671CED6F4800392256 /* DroiAnalyticsDemo2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6A4BC451CED6F4800392256 /* DroiAnalyticsDemo2 */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC7F1CED70AF00392256 /* framework */,
+				F6A4BC491CED6F4800392256 /* AppDelegate.h */,
+				F6A4BC4A1CED6F4800392256 /* AppDelegate.m */,
+				F6A4BC4F1CED6F4800392256 /* Main.storyboard */,
+				F6A4BC521CED6F4800392256 /* Assets.xcassets */,
+				F6A4BC541CED6F4800392256 /* LaunchScreen.storyboard */,
+				F6A4BC571CED6F4800392256 /* Info.plist */,
+				F6A4BC941CED909400392256 /* ViewController */,
+				F6A4BC461CED6F4800392256 /* Supporting Files */,
+			);
+			path = DroiAnalyticsDemo2;
+			sourceTree = "<group>";
+		};
+		F6A4BC461CED6F4800392256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC471CED6F4800392256 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6A4BC5F1CED6F4800392256 /* DroiAnalyticsDemo2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC601CED6F4800392256 /* DroiAnalyticsDemo2Tests.m */,
+				F6A4BC621CED6F4800392256 /* Info.plist */,
+			);
+			path = DroiAnalyticsDemo2Tests;
+			sourceTree = "<group>";
+		};
+		F6A4BC6A1CED6F4800392256 /* DroiAnalyticsDemo2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC6B1CED6F4800392256 /* DroiAnalyticsDemo2UITests.m */,
+				F6A4BC6D1CED6F4800392256 /* Info.plist */,
+			);
+			path = DroiAnalyticsDemo2UITests;
+			sourceTree = "<group>";
+		};
+		F6A4BC7F1CED70AF00392256 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC861CED711000392256 /* DroiCoreSDK */,
+				F6A4BC801CED70AF00392256 /* DroiAnalytics.framework */,
+				F6A4BC811CED70AF00392256 /* DroiCoreSDK.framework */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		F6A4BC861CED711000392256 /* DroiCoreSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC871CED711000392256 /* LICENSE */,
+				F6A4BC881CED711000392256 /* scripts */,
+				F6A4BC8A1CED711000392256 /* sources */,
+			);
+			path = DroiCoreSDK;
+			sourceTree = "<group>";
+		};
+		F6A4BC881CED711000392256 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC891CED711000392256 /* baas_cli */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		F6A4BC8A1CED711000392256 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC8B1CED711000392256 /* DroiBaaS.h */,
+				F6A4BC8C1CED711000392256 /* DroiBaaS.m */,
+				F6A4BC8D1CED711000392256 /* DroiBaaS.plist */,
+				F6A4BC8E1CED711000392256 /* DroiBaaSForSwift.swift */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		F6A4BC941CED909400392256 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F6A4BC951CED909400392256 /* BlueViewController.h */,
+				F6A4BC961CED909400392256 /* BlueViewController.m */,
+				F6A4BC971CED909400392256 /* BlueViewController.xib */,
+				F6A4BC9A1CED909400392256 /* GreenViewController.h */,
+				F6A4BC9B1CED909400392256 /* GreenViewController.m */,
+				F6A4BC9C1CED909400392256 /* GreenViewController.xib */,
+				F6A4BC9D1CED909400392256 /* ViewController.h */,
+				F6A4BC9E1CED909400392256 /* ViewController.m */,
+				F6A4BCA51CED910500392256 /* RedViewController.h */,
+				F6A4BCA61CED910500392256 /* RedViewController.m */,
+				F6A4BCA71CED910500392256 /* RedViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6A4BC421CED6F4800392256 /* DroiAnalyticsDemo2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A4BC701CED6F4800392256 /* Build configuration list for PBXNativeTarget "DroiAnalyticsDemo2" */;
+			buildPhases = (
+				F6A4BC7E1CED704A00392256 /* ShellScript */,
+				F6A4BC3F1CED6F4800392256 /* Sources */,
+				F6A4BC401CED6F4800392256 /* Frameworks */,
+				F6A4BC411CED6F4800392256 /* Resources */,
+				F6A4BC7D1CED704400392256 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroiAnalyticsDemo2;
+			productName = DroiAnalyticsDemo2;
+			productReference = F6A4BC431CED6F4800392256 /* DroiAnalyticsDemo2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6A4BC5B1CED6F4800392256 /* DroiAnalyticsDemo2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A4BC731CED6F4800392256 /* Build configuration list for PBXNativeTarget "DroiAnalyticsDemo2Tests" */;
+			buildPhases = (
+				F6A4BC581CED6F4800392256 /* Sources */,
+				F6A4BC591CED6F4800392256 /* Frameworks */,
+				F6A4BC5A1CED6F4800392256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A4BC5E1CED6F4800392256 /* PBXTargetDependency */,
+			);
+			name = DroiAnalyticsDemo2Tests;
+			productName = DroiAnalyticsDemo2Tests;
+			productReference = F6A4BC5C1CED6F4800392256 /* DroiAnalyticsDemo2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6A4BC661CED6F4800392256 /* DroiAnalyticsDemo2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A4BC761CED6F4800392256 /* Build configuration list for PBXNativeTarget "DroiAnalyticsDemo2UITests" */;
+			buildPhases = (
+				F6A4BC631CED6F4800392256 /* Sources */,
+				F6A4BC641CED6F4800392256 /* Frameworks */,
+				F6A4BC651CED6F4800392256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A4BC691CED6F4800392256 /* PBXTargetDependency */,
+			);
+			name = DroiAnalyticsDemo2UITests;
+			productName = DroiAnalyticsDemo2UITests;
+			productReference = F6A4BC671CED6F4800392256 /* DroiAnalyticsDemo2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6A4BC3B1CED6F4800392256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Droi;
+				TargetAttributes = {
+					F6A4BC421CED6F4800392256 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F6A4BC5B1CED6F4800392256 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4F4PFQNWJZ;
+						TestTargetID = F6A4BC421CED6F4800392256;
+					};
+					F6A4BC661CED6F4800392256 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4F4PFQNWJZ;
+						TestTargetID = F6A4BC421CED6F4800392256;
+					};
+				};
+			};
+			buildConfigurationList = F6A4BC3E1CED6F4800392256 /* Build configuration list for PBXProject "DroiAnalyticsDemo2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6A4BC3A1CED6F4800392256;
+			productRefGroup = F6A4BC441CED6F4800392256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6A4BC421CED6F4800392256 /* DroiAnalyticsDemo2 */,
+				F6A4BC5B1CED6F4800392256 /* DroiAnalyticsDemo2Tests */,
+				F6A4BC661CED6F4800392256 /* DroiAnalyticsDemo2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6A4BC411CED6F4800392256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A4BCA91CED910500392256 /* RedViewController.xib in Resources */,
+				F6A4BCA31CED909400392256 /* GreenViewController.xib in Resources */,
+				F6A4BC561CED6F4800392256 /* LaunchScreen.storyboard in Resources */,
+				F6A4BC921CED711000392256 /* DroiBaaS.plist in Resources */,
+				F6A4BCA01CED909400392256 /* BlueViewController.xib in Resources */,
+				F6A4BC531CED6F4800392256 /* Assets.xcassets in Resources */,
+				F6A4BC901CED711000392256 /* baas_cli in Resources */,
+				F6A4BC8F1CED711000392256 /* LICENSE in Resources */,
+				F6A4BC511CED6F4800392256 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A4BC5A1CED6F4800392256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A4BC651CED6F4800392256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6A4BC7E1CED704A00392256 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/DroiCoreSDK/scripts/baas_cli\" parse \"${SRCROOT}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6A4BC3F1CED6F4800392256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A4BC4B1CED6F4800392256 /* AppDelegate.m in Sources */,
+				F6A4BCA41CED909400392256 /* ViewController.m in Sources */,
+				F6A4BC9F1CED909400392256 /* BlueViewController.m in Sources */,
+				F6A4BCA81CED910500392256 /* RedViewController.m in Sources */,
+				F6A4BC931CED711000392256 /* DroiBaaSForSwift.swift in Sources */,
+				F6A4BC911CED711000392256 /* DroiBaaS.m in Sources */,
+				F6A4BCA21CED909400392256 /* GreenViewController.m in Sources */,
+				F6A4BC481CED6F4800392256 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A4BC581CED6F4800392256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A4BC611CED6F4800392256 /* DroiAnalyticsDemo2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A4BC631CED6F4800392256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A4BC6C1CED6F4800392256 /* DroiAnalyticsDemo2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6A4BC5E1CED6F4800392256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A4BC421CED6F4800392256 /* DroiAnalyticsDemo2 */;
+			targetProxy = F6A4BC5D1CED6F4800392256 /* PBXContainerItemProxy */;
+		};
+		F6A4BC691CED6F4800392256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6A4BC421CED6F4800392256 /* DroiAnalyticsDemo2 */;
+			targetProxy = F6A4BC681CED6F4800392256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6A4BC4F1CED6F4800392256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A4BC501CED6F4800392256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6A4BC541CED6F4800392256 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6A4BC551CED6F4800392256 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6A4BC6E1CED6F4800392256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6A4BC6F1CED6F4800392256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6A4BC711CED6F4800392256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DroiAnalyticsDemo2/framework/DroiCoreSDK",
+					"$(PROJECT_DIR)/DroiAnalyticsDemo2/framework",
+				);
+				INFOPLIST_FILE = DroiAnalyticsDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiAnalyticsDemo2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6A4BC721CED6F4800392256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DroiAnalyticsDemo2/framework/DroiCoreSDK",
+					"$(PROJECT_DIR)/DroiAnalyticsDemo2/framework",
+				);
+				INFOPLIST_FILE = DroiAnalyticsDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiAnalyticsDemo2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6A4BC741CED6F4800392256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DroiAnalyticsDemo2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiAnalyticsDemo2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroiAnalyticsDemo2.app/DroiAnalyticsDemo2";
+			};
+			name = Debug;
+		};
+		F6A4BC751CED6F4800392256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DroiAnalyticsDemo2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiAnalyticsDemo2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroiAnalyticsDemo2.app/DroiAnalyticsDemo2";
+			};
+			name = Release;
+		};
+		F6A4BC771CED6F4800392256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DroiAnalyticsDemo2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiAnalyticsDemo2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroiAnalyticsDemo2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F6A4BC781CED6F4800392256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DroiAnalyticsDemo2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiAnalyticsDemo2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroiAnalyticsDemo2;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6A4BC3E1CED6F4800392256 /* Build configuration list for PBXProject "DroiAnalyticsDemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A4BC6E1CED6F4800392256 /* Debug */,
+				F6A4BC6F1CED6F4800392256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A4BC701CED6F4800392256 /* Build configuration list for PBXNativeTarget "DroiAnalyticsDemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A4BC711CED6F4800392256 /* Debug */,
+				F6A4BC721CED6F4800392256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A4BC731CED6F4800392256 /* Build configuration list for PBXNativeTarget "DroiAnalyticsDemo2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A4BC741CED6F4800392256 /* Debug */,
+				F6A4BC751CED6F4800392256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A4BC761CED6F4800392256 /* Build configuration list for PBXNativeTarget "DroiAnalyticsDemo2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A4BC771CED6F4800392256 /* Debug */,
+				F6A4BC781CED6F4800392256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6A4BC3B1CED6F4800392256 /* Project object */;
+}

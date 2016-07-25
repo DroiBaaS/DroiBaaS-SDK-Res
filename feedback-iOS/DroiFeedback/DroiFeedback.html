@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>意见反馈</title>
+</head>
+<body>
+<div id="wmd-preview" class="wmd-preview"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="o86c" id="意见反馈">意见反馈</h1><div class="md-section-divider"></div><h2 data-anchor-id="yo7b" id="简介">简介</h2><p data-anchor-id="my88">意见反馈可以帮助开发者在应用内收集用户问题反馈和意见建议，开发者可以及时回复用户的反馈，加强与用户之间的沟通，及时了解用户的需求，有利于提升产品质量。  </p><div class="md-section-divider"></div><h2 data-anchor-id="9k0k" id="安装">安装</h2><div class="md-section-divider"></div><h3 data-anchor-id="cpqn" id="快速入门">快速入门</h3><p data-anchor-id="5197">由于DroiFeedback SDK基于DroiCore SDK，所以请在安装DroiFeedback SDK之前仔细阅读<a href="http://baastest.droi.cn/Index/docStart.html" target="_blank">快速入门</a>。</p><div class="md-section-divider"></div><h3 data-anchor-id="jgrm" id="使用cocoapods方式安装推荐">使用CocoaPods方式安装（推荐）</h3><p data-anchor-id="86cc">DroiFeedback SDK使用CocoaPods作为函数库的管理工具。我们推荐您使用CocoaPods这种方式来安装SDK，这样可以大大简化安装DroiFeedback SDK的流程。如果您未安装CocoaPods，请参考《CocoaPods安装和使用教程》完成安装。CocoaPods安装完成后，在您的项目根目录下创建一个Podfile文件，并添加如下内容：</p><pre data-anchor-id="8lkl"><code>pod  'DroiFeedback'
+</code></pre><p data-anchor-id="d77b">在控制台中cd到Podfile文件所在目录，执行如下命令完成安装。</p><pre data-anchor-id="09bc"><code>pod  install
+</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="kvrx" id="手动安装">手动安装</h3><div class="md-section-divider"></div><h4 data-anchor-id="owgd" id="1-安装droicore-sdk">1. 安装DroiCore SDK</h4><p data-anchor-id="swqk">由于DroiFeedback SDK依赖于DroiCore SDK，所以请在安装DroiFeedback SDK之前仔细阅读<a href="http://baastest.droi.cn/Index/docStart.html" target="_blank">快速入门</a> ，完成DroiCore SDK的安装。</p><div class="md-section-divider"></div><h4 data-anchor-id="s051" id="2-导入sdk到应用程序项目">2. 导入SDK到应用程序项目</h4><p data-anchor-id="jokf">将SDK包解压，在XCode中选择”Add files to 'Your project name’…”，将解压后文件夹中的<code>DroiFeedback.framework</code>添加到你的工程目录中。</p><div class="md-section-divider"></div><h4 data-anchor-id="k6xg" id="3-添加必要的框架">3. 添加必要的框架</h4><p data-anchor-id="vdoi">点击<code>Build Phases</code>选项，在<code>Link Binary With Libraries</code>中添加以下内容： <br>
+* Foundation.framework <br>
+* UIKit.framework</p><div class="md-section-divider"></div><h2 data-anchor-id="o4ru" id="使用">使用</h2><div class="md-section-divider"></div><h3 data-anchor-id="0zvi" id="1调用反馈页面">1.调用反馈页面</h3><p data-anchor-id="080x">在需要调用反馈的ViewController中调用如下代码：  </p><pre data-anchor-id="p9mm"><code>[DroiFeedback callFeedbackWithViewController:self];
+</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="18nt" id="2设置userid">2.设置userId</h3><pre data-anchor-id="hq8q"><code>[DroiFeedback setUserId:userId];
+</code></pre><p data-anchor-id="e8sb"><strong><em>注意：</em></strong> <br>
+在没有设置userId时，会生成随机匿名userId。请在呼叫反馈页面前确保都调用<code>setUserId</code>方法。该接口保证用户在其他设备上登录时同样能够获取到该用户对应的反馈，如果不设置此userid，反馈默认对应到匿名用户，用户清除应用数据会丢失匿名用户ID，导致反馈无法对应。如果使用了DroiBaaS提供的DroiUser登录，DroiFeedback会自动设置为当前登录的userId。</p><div class="md-section-divider"></div><h3 data-anchor-id="jw4q" id="3设置主色调">3.设置主色调</h3><pre data-anchor-id="vi5m"><code>[DroiFeedback setColor:[UIColor redColor]];
+</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="l3sh" id="应用内页面">应用内页面</h3><p data-anchor-id="y67m">用户可以在此页面进行反馈提交以及回复查看。 <br>
+<img src="http://i.imgur.com/1EjjuKa.png" width="300"> <img src="http://i.imgur.com/jKulYDC.png" width="300">  </p><div class="md-section-divider"></div><h3 data-anchor-id="m4ns" id="后台页面">后台页面</h3><p data-anchor-id="0xw1">在后台页面可以查看用户反馈量、今日回复量和总反馈量。 <br>
+在反馈列表中，可以选中一条反馈进行回复。回复后，反馈用户可以在反馈回复页面看到回复。</p></div>
+</body>
+</html>

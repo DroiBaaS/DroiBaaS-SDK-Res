@@ -1,0 +1,14 @@
+#platform :ios, "8.0"
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'DroiPushDemo' do
+
+pod 'DroiPushSDK', '~> 0.0.3'
+
+pod 'DroiCoreSDK'
+post_install do |installer|
+    require './Pods/DroiCoreSDK/scripts/postInstall.rb'
+    DroiCoreParser.installParser()
+end
+
+end

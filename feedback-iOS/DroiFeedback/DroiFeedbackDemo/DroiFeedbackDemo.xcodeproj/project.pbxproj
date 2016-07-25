@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F653E6A41D46533F0065F654 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F653E6A31D46533F0065F654 /* main.m */; };
+		F653E6A71D46533F0065F654 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F653E6A61D46533F0065F654 /* AppDelegate.m */; };
+		F653E6AF1D46533F0065F654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F653E6AE1D46533F0065F654 /* Assets.xcassets */; };
+		F653E6B21D46533F0065F654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F653E6B01D46533F0065F654 /* LaunchScreen.storyboard */; };
+		F653E6BC1D46539B0065F654 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F653E6BA1D46539B0065F654 /* FeedbackViewController.m */; };
+		F653E6BD1D46539B0065F654 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F653E6BB1D46539B0065F654 /* FeedbackViewController.xib */; };
+		F653E6BF1D46543E0065F654 /* DroiFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F653E6BE1D46543E0065F654 /* DroiFeedback.framework */; };
+		F653E6C01D4654490065F654 /* DroiFeedback.framework in Resources */ = {isa = PBXBuildFile; fileRef = F653E6BE1D46543E0065F654 /* DroiFeedback.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F653E69F1D46533F0065F654 /* DroiFeedbackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroiFeedbackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F653E6A31D46533F0065F654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F653E6A51D46533F0065F654 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F653E6A61D46533F0065F654 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F653E6AE1D46533F0065F654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F653E6B11D46533F0065F654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F653E6B31D46533F0065F654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F653E6B91D46539B0065F654 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		F653E6BA1D46539B0065F654 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		F653E6BB1D46539B0065F654 /* FeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
+		F653E6BE1D46543E0065F654 /* DroiFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiFeedback.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F653E69C1D46533F0065F654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F653E6BF1D46543E0065F654 /* DroiFeedback.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F653E6961D46533F0065F654 = {
+			isa = PBXGroup;
+			children = (
+				F653E6BE1D46543E0065F654 /* DroiFeedback.framework */,
+				F653E6A11D46533F0065F654 /* DroiFeedbackDemo */,
+				F653E6A01D46533F0065F654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F653E6A01D46533F0065F654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F653E69F1D46533F0065F654 /* DroiFeedbackDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F653E6A11D46533F0065F654 /* DroiFeedbackDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F653E6B91D46539B0065F654 /* FeedbackViewController.h */,
+				F653E6BA1D46539B0065F654 /* FeedbackViewController.m */,
+				F653E6BB1D46539B0065F654 /* FeedbackViewController.xib */,
+				F653E6A51D46533F0065F654 /* AppDelegate.h */,
+				F653E6A61D46533F0065F654 /* AppDelegate.m */,
+				F653E6AE1D46533F0065F654 /* Assets.xcassets */,
+				F653E6B01D46533F0065F654 /* LaunchScreen.storyboard */,
+				F653E6B31D46533F0065F654 /* Info.plist */,
+				F653E6A21D46533F0065F654 /* Supporting Files */,
+			);
+			path = DroiFeedbackDemo;
+			sourceTree = "<group>";
+		};
+		F653E6A21D46533F0065F654 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F653E6A31D46533F0065F654 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F653E69E1D46533F0065F654 /* DroiFeedbackDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F653E6B61D46533F0065F654 /* Build configuration list for PBXNativeTarget "DroiFeedbackDemo" */;
+			buildPhases = (
+				F653E69B1D46533F0065F654 /* Sources */,
+				F653E69C1D46533F0065F654 /* Frameworks */,
+				F653E69D1D46533F0065F654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroiFeedbackDemo;
+			productName = DroiFeedbackDemo;
+			productReference = F653E69F1D46533F0065F654 /* DroiFeedbackDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F653E6971D46533F0065F654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Droi;
+				TargetAttributes = {
+					F653E69E1D46533F0065F654 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F653E69A1D46533F0065F654 /* Build configuration list for PBXProject "DroiFeedbackDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F653E6961D46533F0065F654;
+			productRefGroup = F653E6A01D46533F0065F654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F653E69E1D46533F0065F654 /* DroiFeedbackDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F653E69D1D46533F0065F654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F653E6C01D4654490065F654 /* DroiFeedback.framework in Resources */,
+				F653E6B21D46533F0065F654 /* LaunchScreen.storyboard in Resources */,
+				F653E6AF1D46533F0065F654 /* Assets.xcassets in Resources */,
+				F653E6BD1D46539B0065F654 /* FeedbackViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F653E69B1D46533F0065F654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F653E6A71D46533F0065F654 /* AppDelegate.m in Sources */,
+				F653E6A41D46533F0065F654 /* main.m in Sources */,
+				F653E6BC1D46539B0065F654 /* FeedbackViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F653E6B01D46533F0065F654 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F653E6B11D46533F0065F654 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F653E6B41D46533F0065F654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F653E6B51D46533F0065F654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F653E6B71D46533F0065F654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DroiFeedbackDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiFeedbackDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F653E6B81D46533F0065F654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = DroiFeedbackDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.droibaas.DroiFeedbackDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F653E69A1D46533F0065F654 /* Build configuration list for PBXProject "DroiFeedbackDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F653E6B41D46533F0065F654 /* Debug */,
+				F653E6B51D46533F0065F654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F653E6B61D46533F0065F654 /* Build configuration list for PBXNativeTarget "DroiFeedbackDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F653E6B71D46533F0065F654 /* Debug */,
+				F653E6B81D46533F0065F654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F653E6971D46533F0065F654 /* Project object */;
+}

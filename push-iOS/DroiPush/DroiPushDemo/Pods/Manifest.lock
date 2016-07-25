@@ -1,0 +1,16 @@
+PODS:
+  - DroiCoreSDK (0.5.1552)
+  - DroiPushSDK (0.0.3):
+    - DroiCoreSDK
+
+DEPENDENCIES:
+  - DroiCoreSDK
+  - DroiPushSDK (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  DroiCoreSDK: 5b46f9822889346738e8fd3db37f8dc22446f9bd
+  DroiPushSDK: 421c1a6b48864f6edf69b1332d62ac057d7a217f
+
+PODFILE CHECKSUM: 531e7d6244b6c6e45ddfb5deab04e190497c7b01
+
+COCOAPODS: 1.0.0.beta.4
