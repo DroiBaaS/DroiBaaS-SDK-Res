@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.droi.sdk.analyticsdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- DroiCore Sdk -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- DroiAnalytics Sdk -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.droi.sdk.application_id"
+            android:value="tc8umbzhVlDOEnZck91Nx4eWP5GtxmpYlQAAEBUa" />
+        <meta-data
+            android:name="com.droi.sdk.platform_key"
+            android:value="uh3D4BThJ3OQ5-JmWAaS7fDMditzBOCS7fDMditz" />
+        <meta-data
+            android:name="com.droi.sdk.channel_name"
+            android:value="DROI_CHANNEL" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabFragmentActivity" >
+        </activity>
+        <activity android:name=".Activity1" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">DroiAnalyticsDemo</string>
+    <string name="device_id">DeviceId:</string>
+    <string name="app_id">AppId:</string>
+    <string name="channel">Channel:</string>
+    <string name="open_activity">统计activity页面</string>
+    <string name="open_fragment">统计fragment页面</string>
+    <string name="count_event">计数事件</string>
+    <string name="value_event">计算事件</string>
+    <string name="add_kv">是否附加信息</string>
+    <string name="value">数值:</string>
+    <string name="kv_key">Key:</string>
+    <string name="kv_value">Value:</string>
+    <string name="error_string">错误内容:</string>
+    <string name="error">自定义错误</string>
+    <string name="crash">程序崩溃</string>
+
+    <string name="back_to_mainactivity">按back回到mainactivity</string>
+
+</resources>
