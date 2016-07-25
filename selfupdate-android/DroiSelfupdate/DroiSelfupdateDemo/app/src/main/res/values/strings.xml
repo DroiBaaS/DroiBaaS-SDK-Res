@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DroiSelfupdateDemo</string>
+    <string name="updateApp">更新应用</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_id">AppId:</string>
+    <string name="channel">Channel:</string>
+    <string name="version_code">VersionCode:</string>
+    <string name="title_app_update">应用更新</string>
+    <string name="normal_ui_upate">默认UI更新</string>
+    <string name="custom_ui_upate">自定义UI更新</string>
+    <string name="silent_upadte">静默更新</string>
+    <string name="force_upadte">强制更新</string>
+    <string name="market_upadte">卓易市场更新</string>
+    <string name="manualt_upadte">手动更新</string>
+    <string name="delet_update_file">删除更新下载文件</string>
+    <string name="title_inapp_update">应用内文件更新</string>
+    <string name="inapp_update">应用内更新</string>
+    <string name="delete_inapp_update_file">删除文件</string>
+
+    <string name="update_status_no">没有更新</string>
+    <string name="update_status_yes">发现更新,正在下载</string>
+    <string name="update_status_error">发生错误</string>
+    <string name="update_status_timeout">请求超时</string>
+    <string name="update_status_nonwifi">没有wifi连接， 只在wifi下更新</string>
+    <string name="update_status_updating">已经在更新中</string>
+
+    <string name="update_inappupdate_no">没有更新</string>
+    <string name="update_inappupdate_yes">有更新，下载成功</string>
+    <string name="update_inappupdate_download_failed">下载时发生错误</string>
+    <string name="update_inappupdate_request_failed">请求更新时发生错误</string>
+
+    <string name="delete_error">发生错误</string>
+    <string name="delete_">超时</string>'
+</resources>

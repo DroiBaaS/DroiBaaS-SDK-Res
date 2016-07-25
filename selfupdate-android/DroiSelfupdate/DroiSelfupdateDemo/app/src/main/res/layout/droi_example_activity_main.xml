@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F2">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_id"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/app_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/channel"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_code"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/version_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF909090" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_app_update"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:textSize="15sp">
+
+            <Button
+                android:id="@+id/normal_ui_upate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/normal_ui_upate"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/custom_ui_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/custom_ui_upate"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:textSize="15sp">
+
+            <Button
+                android:id="@+id/silent_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/silent_upadte"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/force_upadte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/force_upadte"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:textSize="15sp">
+
+            <Button
+                android:id="@+id/manual_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/manualt_upadte"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/delet_update_file"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/delet_update_file"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:textSize="15sp"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/market_upadte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/market_upadte"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_inapp_update"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/inapp_update"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/inapp_update"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/delete_inapp_update_file"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/droi_example_blue_btn"
+                android:text="@string/delete_inapp_update_file"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </TableLayout>
+</ScrollView>
