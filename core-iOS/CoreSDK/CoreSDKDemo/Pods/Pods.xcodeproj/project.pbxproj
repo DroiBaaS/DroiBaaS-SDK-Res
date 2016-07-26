@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003257BF48C714417C95BCACF87EAD07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		18607FC98497A08A900AE0610DDEEEA8 /* LJLogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F47C40459AEF4B24E4246B19E9AB2B3 /* LJLogView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FF8D403725325830A309945043CA04 /* Pods-CoreSDKDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3206009A4DD56BB8CB846A19B5A2E5E /* Pods-CoreSDKDemo-dummy.m */; };
+		55C95AC6CDB9CE6E7300BB894459F042 /* LJLogView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A246043848C6287C984F1B3C3802BDA /* LJLogView-dummy.m */; };
+		8F283A59ED25B657A8E50B4562C00A93 /* LJLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FD454279033BD66CE4B162560471FB /* LJLogView.m */; };
+		ED69E82962036FAF6BA6404AD03F356A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0887B4613C10C4FF7B930809B38B029C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5060C4264709C65CE4BD54B7A24C827F;
+			remoteInfo = LJLogView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023D6A342F96919B936E554958FEB432 /* Pods-CoreSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		0E0FC634FB83F6A40B7478B1345E90E2 /* Pods-CoreSDKDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreSDKDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A246043848C6287C984F1B3C3802BDA /* LJLogView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LJLogView-dummy.m"; sourceTree = "<group>"; };
+		4426D8EB2E3716073A0ECF003035395B /* DroiCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiCoreSDK.framework; sourceTree = "<group>"; };
+		4FCCF502B6D796732BF23466A6D4BE4E /* LJLogView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LJLogView-prefix.pch"; sourceTree = "<group>"; };
+		6003B3C3C4C5FF15907C4E617A84BE51 /* Pods-CoreSDKDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreSDKDemo-frameworks.sh"; sourceTree = "<group>"; };
+		61F6E27E0E3ACAC27FB31170C2CAC20F /* Pods-CoreSDKDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreSDKDemo-resources.sh"; sourceTree = "<group>"; };
+		8026726BEBCEE89BE750E5D43FC3F9BF /* LJLogView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LJLogView.xcconfig; sourceTree = "<group>"; };
+		9BEE2EA868FA73D16C3FF2FD69FF76F2 /* Pods-CoreSDKDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreSDKDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		9F47C40459AEF4B24E4246B19E9AB2B3 /* LJLogView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJLogView.h; path = LJLogView/LJLogView.h; sourceTree = "<group>"; };
+		B0EB41CEF0703FCBC45FEED1598B6C1D /* libLJLogView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLJLogView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB416BBD99079144810F91709D7FE587 /* LJLogView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LJLogView.xib; path = Resource/LJLogView.xib; sourceTree = "<group>"; };
+		E3206009A4DD56BB8CB846A19B5A2E5E /* Pods-CoreSDKDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreSDKDemo-dummy.m"; sourceTree = "<group>"; };
+		E9FD454279033BD66CE4B162560471FB /* LJLogView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJLogView.m; path = LJLogView/LJLogView.m; sourceTree = "<group>"; };
+		F67B2B6CB9192F489FDCF44C4A361D47 /* Pods-CoreSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F70B505D94112C571C9193C5CECB5417 /* libPods-CoreSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CoreSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8635D7172F3DC36AF23C3BC6A30CED0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED69E82962036FAF6BA6404AD03F356A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD6CCB91C585860613A449358E27C9A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003257BF48C714417C95BCACF87EAD07 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0765AC4D30DA56FF10EC7A4DD46DB7A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1698DE09A39B2497476D420D34E82FB5 /* DroiCoreSDK */,
+				B7DD7DE3B38CAA4DE49901E28BB73CA2 /* LJLogView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1698DE09A39B2497476D420D34E82FB5 /* DroiCoreSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BB536CC08F2E0D7024B720F5434586EE /* Frameworks */,
+			);
+			path = DroiCoreSDK;
+			sourceTree = "<group>";
+		};
+		441EEBC4BF458BF215ED79B3ECCFB46C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0EB41CEF0703FCBC45FEED1598B6C1D /* libLJLogView.a */,
+				F70B505D94112C571C9193C5CECB5417 /* libPods-CoreSDKDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		604A640307F569EEF97E934B3AD29701 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8026726BEBCEE89BE750E5D43FC3F9BF /* LJLogView.xcconfig */,
+				3A246043848C6287C984F1B3C3802BDA /* LJLogView-dummy.m */,
+				4FCCF502B6D796732BF23466A6D4BE4E /* LJLogView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LJLogView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0765AC4D30DA56FF10EC7A4DD46DB7A3 /* Pods */,
+				441EEBC4BF458BF215ED79B3ECCFB46C /* Products */,
+				CEC243947F43FB568749094D485EB744 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		991C34ABBD3CBB34943E664ED9DF439F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB416BBD99079144810F91709D7FE587 /* LJLogView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B7DD7DE3B38CAA4DE49901E28BB73CA2 /* LJLogView */ = {
+			isa = PBXGroup;
+			children = (
+				9F47C40459AEF4B24E4246B19E9AB2B3 /* LJLogView.h */,
+				E9FD454279033BD66CE4B162560471FB /* LJLogView.m */,
+				991C34ABBD3CBB34943E664ED9DF439F /* Resources */,
+				604A640307F569EEF97E934B3AD29701 /* Support Files */,
+			);
+			path = LJLogView;
+			sourceTree = "<group>";
+		};
+		BB536CC08F2E0D7024B720F5434586EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4426D8EB2E3716073A0ECF003035395B /* DroiCoreSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112C7921E3A497328D11F4930CBBC9CA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC243947F43FB568749094D485EB744 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0A548DABD7D4C9925F64B167B197B /* Pods-CoreSDKDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FFA0A548DABD7D4C9925F64B167B197B /* Pods-CoreSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0E0FC634FB83F6A40B7478B1345E90E2 /* Pods-CoreSDKDemo-acknowledgements.markdown */,
+				9BEE2EA868FA73D16C3FF2FD69FF76F2 /* Pods-CoreSDKDemo-acknowledgements.plist */,
+				E3206009A4DD56BB8CB846A19B5A2E5E /* Pods-CoreSDKDemo-dummy.m */,
+				6003B3C3C4C5FF15907C4E617A84BE51 /* Pods-CoreSDKDemo-frameworks.sh */,
+				61F6E27E0E3ACAC27FB31170C2CAC20F /* Pods-CoreSDKDemo-resources.sh */,
+				023D6A342F96919B936E554958FEB432 /* Pods-CoreSDKDemo.debug.xcconfig */,
+				F67B2B6CB9192F489FDCF44C4A361D47 /* Pods-CoreSDKDemo.release.xcconfig */,
+			);
+			name = "Pods-CoreSDKDemo";
+			path = "Target Support Files/Pods-CoreSDKDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		704520349E5290AAD5CECFEB6C8AA77B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18607FC98497A08A900AE0610DDEEEA8 /* LJLogView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5060C4264709C65CE4BD54B7A24C827F /* LJLogView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE82AED559EEDCDEC8041A691AC8B947 /* Build configuration list for PBXNativeTarget "LJLogView" */;
+			buildPhases = (
+				F40807E30C722247A373DB0FE1FF79C4 /* Sources */,
+				DD6CCB91C585860613A449358E27C9A5 /* Frameworks */,
+				704520349E5290AAD5CECFEB6C8AA77B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJLogView;
+			productName = LJLogView;
+			productReference = B0EB41CEF0703FCBC45FEED1598B6C1D /* libLJLogView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		69F2AF909B5BCDD49845B00015529901 /* Pods-CoreSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B0D623CAB2B28EB68397ED622C73458 /* Build configuration list for PBXNativeTarget "Pods-CoreSDKDemo" */;
+			buildPhases = (
+				55F92AF4FBD5C81D682D14EC17EDF927 /* Sources */,
+				8635D7172F3DC36AF23C3BC6A30CED0A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				583443BB3EE14C9C590A315CD12BC716 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoreSDKDemo";
+			productName = "Pods-CoreSDKDemo";
+			productReference = F70B505D94112C571C9193C5CECB5417 /* libPods-CoreSDKDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 441EEBC4BF458BF215ED79B3ECCFB46C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5060C4264709C65CE4BD54B7A24C827F /* LJLogView */,
+				69F2AF909B5BCDD49845B00015529901 /* Pods-CoreSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55F92AF4FBD5C81D682D14EC17EDF927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FF8D403725325830A309945043CA04 /* Pods-CoreSDKDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F40807E30C722247A373DB0FE1FF79C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55C95AC6CDB9CE6E7300BB894459F042 /* LJLogView-dummy.m in Sources */,
+				8F283A59ED25B657A8E50B4562C00A93 /* LJLogView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		583443BB3EE14C9C590A315CD12BC716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LJLogView;
+			target = 5060C4264709C65CE4BD54B7A24C827F /* LJLogView */;
+			targetProxy = 0887B4613C10C4FF7B930809B38B029C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		54F94BB03E73D2AAA419A7B46B6C2AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023D6A342F96919B936E554958FEB432 /* Pods-CoreSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C3A65800DD03666AF7AC8A597B6D8F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67B2B6CB9192F489FDCF44C4A361D47 /* Pods-CoreSDKDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		811519CB8F683AC06F9C98B55AC40F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		882EB4391EC2E701934974DA86F7343F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C429B8B7BAEEE9521DE5C5B4E616921B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8026726BEBCEE89BE750E5D43FC3F9BF /* LJLogView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LJLogView/LJLogView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DD1BC5AC60E1F44EC789956BE43DF4E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8026726BEBCEE89BE750E5D43FC3F9BF /* LJLogView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LJLogView/LJLogView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B0D623CAB2B28EB68397ED622C73458 /* Build configuration list for PBXNativeTarget "Pods-CoreSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F94BB03E73D2AAA419A7B46B6C2AD3 /* Debug */,
+				6C3A65800DD03666AF7AC8A597B6D8F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882EB4391EC2E701934974DA86F7343F /* Debug */,
+				811519CB8F683AC06F9C98B55AC40F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE82AED559EEDCDEC8041A691AC8B947 /* Build configuration list for PBXNativeTarget "LJLogView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1BC5AC60E1F44EC789956BE43DF4E6 /* Debug */,
+				C429B8B7BAEEE9521DE5C5B4E616921B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

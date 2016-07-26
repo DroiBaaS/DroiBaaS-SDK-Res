@@ -7,7 +7,7 @@
 //
 
 #import "UserInfoViewController.h"
-#import "DroiOAuth.h"
+#import <DroiOAuth/DroiOAuth.h>
 @interface UserInfoViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *userInfo;
 
