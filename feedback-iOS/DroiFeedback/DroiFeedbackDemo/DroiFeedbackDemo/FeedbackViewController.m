@@ -8,7 +8,7 @@
 
 #import "FeedbackViewController.h"
 #import <DroiCoreSDK/DroiCoreSDK.h>
-#import "DroiFeedback.h"
+#import <DroiFeedback/DroiFeedback.h>
 @interface FeedbackViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *appId;
