@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DroiBaaS TestApp</string>
+    <string name="data_button">DATA TEST</string>
+    <string name="acl_button">ACL TEST</string>
+    <string name="test10times">Run 10 Times</string>
+    <string name="clearAllData">Clear All Data</string>
+    <string name="reference">reference Test</string>
+    <string name="preference">preference Test</string>
+    <string name="cloudcache">cloudcache Test</string>
+    <string name="droifile_upload">droifile upload</string>
+    <string name="droifile_download">droifile download</string>
+
+</resources>
