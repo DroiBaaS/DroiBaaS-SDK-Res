@@ -20,7 +20,12 @@
 由于卓易统计SDK基于卓易CoreSDK，所以请在安装卓易统计SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html)，并确保已经完成快速入门的所有步骤。
 
 ### Eclipse 安装SDK
-下载[SDK压缩包]()，解压后将 `droianalyticssdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。***（ADT17及以上不需要手动导入）***
+1. 下载[SDK压缩包]()，解压后将 `droianalyticssdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。***（ADT17及以上不需要手动导入）***
+
+2. 需要在 AndroidManifest 中配置权限
+    ``` xml
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    ```
 
 ### Android Studio 安装SDK
 Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
@@ -30,10 +35,7 @@ dependencies {
     compile 'com.droi.sdk:analytics:1.0.+'
 }
 ```
-### 配置权限
-``` xml
-<uses-permission android:name="android.permission.GET_TASKS" />
-```
+
 ## 使用
 
 ### 初始化
