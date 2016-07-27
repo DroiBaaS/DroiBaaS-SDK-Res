@@ -23,16 +23,16 @@
 
 下载[SDK压缩包]()，解压后将DroiOauthDemo工程libs下的jar包文件复制到项目工程的libs目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`
 
-### Android Studio环境集成 
+### Android Studio环境安装 
 Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
 
 	dependencies {
 		/*其他依赖 */
-		compile 'com.droi.sdk:oauth:1.0.001'
+		compile 'com.droi.sdk:oauth:+'
 		compile 'com.android.support:support-v4:23.3.0'
 	}
 
-### 组件配置(AndroidManifest.xml配置)
+### Eclipse环境安装
 
     <!-- 账号登录、注册和找回密码界面Activity -->
     <activity
@@ -66,7 +66,7 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 
   账号SDK仅支持**Implicit Grant**授权模式。账号登录回调提供两个方法，分别对应登录成功和失败，登录成功返回token和openId等信息，否则返回失败信息。
 
-	DroiOauth.requestTokenAuth(MainActivity.this, new DroiAccountCallBack() {
+	DroiOauth.requestTokenAuth(MainActivity.this, new DroiAccountLoginCallBack() {
 		    @Override
 		    public void onSuccess(String data) {
 		        // 登录成功执行回调

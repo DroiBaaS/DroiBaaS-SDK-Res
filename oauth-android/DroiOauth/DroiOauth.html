@@ -5,21 +5,21 @@
 <title>DroiOauth</title>
 </head>
 <body>
-<div id="wmd-preview" class="wmd-preview"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="yudv" id="droioauth">DroiOauth</h1><div class="md-section-divider"></div><h2 data-anchor-id="qamj" id="简介">简介</h2><div class="md-section-divider"></div><h3 data-anchor-id="jo35" id="卓易授权是什么">卓易授权是什么</h3><p data-anchor-id="ytxi">卓易授权(DroiOauth)是依托卓易市场、FreeMeOS庞大用户群体和海量优势资源，使得广大合作伙伴和第三方开发者接入卓易账号功能后能够轻松享有卓易产品中的海量用户资源。用户可以方便快捷地使用卓易授权登录卓易账号系统，同时为用户带来统一、友好的登录体验。</p><div class="md-section-divider"></div><h2 data-anchor-id="rebu" id="安装">安装</h2><div class="md-section-divider"></div><h3 data-anchor-id="026b" id="开发环境">开发环境</h3><p data-anchor-id="dscx">操作系统：Windows、Linux、Mac等； <br>
+<div id="wmd-preview" class="wmd-preview"><div class="md-section-divider"></div><div class="md-section-divider"></div><h1 data-anchor-id="chzt" id="droioauth">DroiOauth</h1><div class="md-section-divider"></div><h2 data-anchor-id="lz8x" id="简介">简介</h2><div class="md-section-divider"></div><h3 data-anchor-id="cf1i" id="卓易授权是什么">卓易授权是什么</h3><p data-anchor-id="29c5">卓易授权(DroiOauth)是依托卓易市场、FreeMeOS庞大用户群体和海量优势资源，使得广大合作伙伴和第三方开发者接入卓易账号功能后能够轻松享有卓易产品中的海量用户资源。用户可以方便快捷地使用卓易授权登录卓易账号系统，同时为用户带来统一、友好的登录体验。</p><div class="md-section-divider"></div><h2 data-anchor-id="09od" id="安装">安装</h2><div class="md-section-divider"></div><h3 data-anchor-id="6l9m" id="开发环境">开发环境</h3><p data-anchor-id="mmcs">操作系统：Windows、Linux、Mac等； <br>
 开发工具：Eclipse 3.x 及以上版本或Android Studio，Android API15及以上版本； <br>
-支持设备：Android模拟器或手机(支持Android API15及以上版本)；  </p><div class="md-section-divider"></div><h3 data-anchor-id="43hg" id="快速入门">快速入门</h3><p data-anchor-id="2xo2">由于卓易授权(DroiOauth)SDK基于卓易CoreSDK，所以请在安装卓易授权SDK之前仔细阅读<a href="http://baastest.droi.cn/Index/docStart.html" target="_blank">快速入门</a> 。</p><div class="md-section-divider"></div><h3 data-anchor-id="684b" id="eclipse环境集成">Eclipse环境集成</h3><p data-anchor-id="xwku">下载SDK压缩包，解压后将DroiOauthDemo工程libs下的jar包文件复制到项目工程的libs目录下；右键工程根目录，选择<code>Properties</code> -&gt; <code>Java Build Path</code> -&gt; <code>Libraries</code>，然后点击<code>Add External JARs...</code> 选择指向jar的路径，点击OK，即导入成功。<code>（ADT17及以上不需要手动导入）</code></p><div class="md-section-divider"></div><h3 data-anchor-id="1h47" id="android-studio环境集成">Android Studio环境集成</h3><p data-anchor-id="ln82">Android Studio环境下只需要在Project的<code>build.gradle</code>中添加如下依赖：</p><pre data-anchor-id="6vqr"><code>dependencies {
+支持设备：Android模拟器或手机(支持Android API15及以上版本)；  </p><div class="md-section-divider"></div><h3 data-anchor-id="gwza" id="快速入门">快速入门</h3><p data-anchor-id="le2y">由于卓易授权(DroiOauth)SDK基于卓易CoreSDK，所以请在安装卓易授权SDK之前仔细阅读<a href="http://baastest.droi.cn/Index/docStart.html" target="_blank">快速入门</a> 。</p><div class="md-section-divider"></div><h3 data-anchor-id="x8zt" id="eclipse环境集成">Eclipse环境集成</h3><p data-anchor-id="fx4o">下载SDK压缩包，解压后将DroiOauthDemo工程libs下的jar包文件复制到项目工程的libs目录下；右键工程根目录，选择<code>Properties</code> -&gt; <code>Java Build Path</code> -&gt; <code>Libraries</code>，然后点击<code>Add External JARs...</code> 选择指向jar的路径，点击OK，即导入成功。<code>（ADT17及以上不需要手动导入）</code></p><div class="md-section-divider"></div><h3 data-anchor-id="j2dv" id="android-studio环境安装">Android Studio环境安装</h3><p data-anchor-id="rbls">Android Studio环境下只需要在Project的<code>build.gradle</code>中添加如下依赖：</p><pre data-anchor-id="bd79"><code>dependencies {
     /*其他依赖 */
-    compile 'com.droi.sdk:oauth:1.0.001'
+    compile 'com.droi.sdk:oauth:+'
     compile 'com.android.support:support-v4:23.3.0'
 }
-</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="0m5w" id="组件配置androidmanifestxml配置">组件配置(AndroidManifest.xml配置)</h3><pre data-anchor-id="36hd"><code>&lt;!-- 账号登录、注册和找回密码界面Activity --&gt;
+</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="a3ei" id="eclipse环境安装">Eclipse环境安装</h3><pre data-anchor-id="5zvc"><code>&lt;!-- 账号登录、注册和找回密码界面Activity --&gt;
 &lt;activity
     android:name="com.droi.sdk.oauth.ui.AuthActivity"
     android:configChanges="keyboardHidden|orientation|screenSize" &gt;
 &lt;/activity&gt;
-</code></pre><p data-anchor-id="dbue"><strong>注意：具体配置可以参考zip包内Demo的清单文件</strong></p><div class="md-section-divider"></div><h2 data-anchor-id="nwwb" id="使用">使用</h2><p data-anchor-id="ateg">登录授权的开放接口类为DroiOauth。开发者可以根据具体的使用场景和需求，调用其中的接口，实现包括语言定制、界面主色调定制、登陆授权以及获取账号信息在内的功能。</p><div class="md-section-divider"></div><h3 data-anchor-id="x5h5" id="初始化">初始化</h3><p data-anchor-id="h3jt">在Application的<code>onCreate()</code>方法中初始化DroiOauth。</p><pre data-anchor-id="c5g0"><code>DroiOauth.initialize(getApplicationContext());
-</code></pre><p data-anchor-id="d5mx"><strong>注意：DroiOauth初始化方法必须在其他方法之前调用，否则会抛出异常</strong></p><div class="md-section-divider"></div><h3 data-anchor-id="3fll" id="语言设置">语言设置</h3><p data-anchor-id="ef2m">卓易授权SDK支持界面语言的定制化，通过SDK语言设置接口指定页面的语言类别，支持的语言包括中<code>中文(zh_CN)</code>、<code>英文(en_US)</code>等。</p><pre data-anchor-id="o6pg"><code>DroiOauth.setLanguage("zh_CN");
-</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="24hp" id="登录授权">登录授权</h3><p data-anchor-id="vi82">账号SDK仅支持<strong>Implicit Grant</strong>授权模式。账号登录回调提供两个方法，分别对应登录成功和失败，登录成功返回token和openId等信息，否则返回失败信息。</p><pre data-anchor-id="ayvx"><code>DroiOauth.requestTokenAuth(MainActivity.this, new DroiAccountCallBack() {
+</code></pre><p data-anchor-id="olqk"><strong>注意：具体配置可以参考zip包内Demo的清单文件</strong></p><div class="md-section-divider"></div><h2 data-anchor-id="lr5s" id="使用">使用</h2><p data-anchor-id="zukv">登录授权的开放接口类为DroiOauth。开发者可以根据具体的使用场景和需求，调用其中的接口，实现包括语言定制、界面主色调定制、登陆授权以及获取账号信息在内的功能。</p><div class="md-section-divider"></div><h3 data-anchor-id="v3o4" id="初始化">初始化</h3><p data-anchor-id="xx9g">在Application的<code>onCreate()</code>方法中初始化DroiOauth。</p><pre data-anchor-id="wbjk"><code>DroiOauth.initialize(getApplicationContext());
+</code></pre><p data-anchor-id="f05y"><strong>注意：DroiOauth初始化方法必须在其他方法之前调用，否则会抛出异常</strong></p><div class="md-section-divider"></div><h3 data-anchor-id="3gfz" id="语言设置">语言设置</h3><p data-anchor-id="9pv0">卓易授权SDK支持界面语言的定制化，通过SDK语言设置接口指定页面的语言类别，支持的语言包括中<code>中文(zh_CN)</code>、<code>英文(en_US)</code>等。</p><pre data-anchor-id="mt7z"><code>DroiOauth.setLanguage("zh_CN");
+</code></pre><div class="md-section-divider"></div><h3 data-anchor-id="3gpo" id="登录授权">登录授权</h3><p data-anchor-id="49t3">账号SDK仅支持<strong>Implicit Grant</strong>授权模式。账号登录回调提供两个方法，分别对应登录成功和失败，登录成功返回token和openId等信息，否则返回失败信息。</p><pre data-anchor-id="ek0h"><code>DroiOauth.requestTokenAuth(MainActivity.this, new DroiAccountLoginCallBack() {
         @Override
         public void onSuccess(String data) {
             // 登录成功执行回调
@@ -31,7 +31,7 @@
             // data 登录失败执行回调
         }
     });
-</code></pre><p data-anchor-id="fuls">登陆成功后返回登录信息Json串，其中各字段及含义如下：</p><table data-anchor-id="4mol" class="table table-striped-white table-bordered">
+</code></pre><p data-anchor-id="upi3">登陆成功后返回登录信息Json串，其中各字段及含义如下：</p><table data-anchor-id="qig0" class="table table-striped-white table-bordered">
 <thead>
 <tr>
  <th>字段名称</th>
@@ -64,7 +64,7 @@
  <td>String</td>
  <td>授予登录账号的令牌字段</td>
 </tr>
-</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="i96n" id="获取账号信息">获取账号信息</h3><p data-anchor-id="30sr">账号登录成功后，可以通过调用getAccountInfo方法来获取账户相关信息，其中Scope枚举指定获取信息类型，如下所示：</p><table data-anchor-id="stp0" class="table table-striped-white table-bordered">
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="h988" id="获取账号信息">获取账号信息</h3><p data-anchor-id="92ac">账号登录成功后，可以通过调用getAccountInfo方法来获取账户相关信息，其中Scope枚举指定获取信息类型，如下所示：</p><table data-anchor-id="8oky" class="table table-striped-white table-bordered">
 <thead>
 <tr>
  <th>Scope</th>
@@ -83,12 +83,12 @@
  <td>Scope.USERMAIL</td>
  <td>获取账户邮箱信息</td>
 </tr>
-</tbody></table><p data-anchor-id="srf7">getAccountInfo方法需要传递scope数组，指定获取那些账号信息，可以一次传递多个类型，同时获取多种信息。</p><p data-anchor-id="wra0">getAccountInfo方法传入GetAccountInfoCallBack回调对象，其中返回OauthError对象用于表示获取是否成功。调用OauthError相关方法获取执行成功与否信息，如下：</p><pre data-anchor-id="pt5q"><code>// 获取信息操作是否成功
+</tbody></table><p data-anchor-id="oglg">getAccountInfo方法需要传递scope数组，指定获取那些账号信息，可以一次传递多个类型，同时获取多种信息。</p><p data-anchor-id="u5yb">getAccountInfo方法传入GetAccountInfoCallBack回调对象，其中返回OauthError对象用于表示获取是否成功。调用OauthError相关方法获取执行成功与否信息，如下：</p><pre data-anchor-id="k0p4"><code>// 获取信息操作是否成功
 boolean success = error.isOk();  
 
 // 获取操作失败信息
 String message = error.getDescMessage();
-</code></pre><p data-anchor-id="wo9c">如下为获取所有账号信息示例代码：  </p><pre data-anchor-id="j1sj"><code>DroiOauth.getAccountInfo(mOpenId, mToken, new Scope[]{Scope.USERINFO, Scope.USERPHONE, Scope.USERMAI}, new GetAccountInfoCallBack() {
+</code></pre><p data-anchor-id="l202">如下为获取所有账号信息示例代码：  </p><pre data-anchor-id="2p3u"><code>DroiOauth.getAccountInfo(mOpenId, mToken, new Scope[]{Scope.USERINFO, Scope.USERPHONE, Scope.USERMAI}, new GetAccountInfoCallBack() {
     @Override
     public void onGetAccountInfo(final OauthError error, final String data) {
         // TODO Auto-generated method stub
@@ -103,7 +103,7 @@ String message = error.getDescMessage();
         }
     }
 });  
-</code></pre><p data-anchor-id="mrny"><strong>注意：后台创建应用时必须申请以上账号信息权限，若未申请，则获取对应信息失败</strong>  </p><p data-anchor-id="fawv">GetAccountInfoCallBack回调data参数为账户信息Json字符串，解析后获取账号信息，以下为各字段含义：</p><table data-anchor-id="kvcv" class="table table-striped-white table-bordered">
+</code></pre><p data-anchor-id="dgcq"><strong>注意：后台创建应用时必须申请以上账号信息权限，若未申请，则获取对应信息失败</strong>  </p><p data-anchor-id="ia1l">GetAccountInfoCallBack回调data参数为账户信息Json字符串，解析后获取账号信息，以下为各字段含义：</p><table data-anchor-id="ikv5" class="table table-striped-white table-bordered">
 <thead>
 <tr>
  <th>字段名称</th>
@@ -151,7 +151,7 @@ String message = error.getDescMessage();
  <td>String</td>
  <td>生日</td>
 </tr>
-</tbody></table><p data-anchor-id="1d3z">获取账号信息失败，result字段则为对应错误码，以下为常见错误码的含义：</p><table data-anchor-id="u8tb" class="table table-striped-white table-bordered">
+</tbody></table><p data-anchor-id="uay5">获取账号信息失败，result字段则为对应错误码，以下为常见错误码的含义：</p><table data-anchor-id="avn0" class="table table-striped-white table-bordered">
 <thead>
 <tr>
  <th>错误码</th>
@@ -190,14 +190,14 @@ String message = error.getDescMessage();
  <td>-10010</td>
  <td>用户不存在</td>
 </tr>
-</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="cnho" id="查询token有效性">查询Token有效性</h3><p data-anchor-id="h0wa">DroiOauth提供查询token有效性接口，用于判断token是否失效，示例代码如下：</p><pre data-anchor-id="3g0t"><code>DroiOauth.checkTokenExpire(mToken, new CheckTokenStateCallback() {
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="vxng" id="查询token有效性">查询Token有效性</h3><p data-anchor-id="6ubn">DroiOauth提供查询token有效性接口，用于判断token是否失效，示例代码如下：</p><pre data-anchor-id="98y2"><code>DroiOauth.checkTokenExpire(mToken, new CheckTokenStateCallback() {
     @Override
     public void onTokenCheckResult(final OauthError oauthError, final String data) {
         // oauthError 包含SDK执行的错误码和出错信息
         // data 为查询结果Json字符串，含有有效时间信息
     ｝
 });
-</code></pre><p data-anchor-id="hpwo">其中data包含token有效信息，字段如下所示：</p><table data-anchor-id="zxic" class="table table-striped-white table-bordered">
+</code></pre><p data-anchor-id="bkuh">其中data包含token有效信息，字段如下所示：</p><table data-anchor-id="zc7k" class="table table-striped-white table-bordered">
 <thead>
 <tr>
  <th>字段名称</th>
@@ -220,7 +220,7 @@ String message = error.getDescMessage();
  <td>long</td>
  <td>token有效截止时间，超出token失效</td>
 </tr>
-</tbody></table><p data-anchor-id="1xsn">若token失效，则data参数包含对应错误码及描述信息，如下：</p><table data-anchor-id="i6qg" class="table table-striped-white table-bordered">
+</tbody></table><p data-anchor-id="0d3y">若token失效，则data参数包含对应错误码及描述信息，如下：</p><table data-anchor-id="k0d8" class="table table-striped-white table-bordered">
 <thead>
 <tr>
  <th>错误码</th>
@@ -231,6 +231,6 @@ String message = error.getDescMessage();
  <td>-10020</td>
  <td>会话不存在</td>
 </tr>
-</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="ngsx" id="快速授权登录">快速授权登录</h3><p data-anchor-id="ax7b">卓易授权SDK内部封装了快速登录子模块。在FreeMe OS系统环境下，如果系统账号APK已经登录且支持快速登录，卓易授权SDK会自动跳转到快速授权登录页面，借助系统已登录账号实现快速登录。同时，还可选择切换账号，使用其他账号登录，如下所示：  </p><p data-anchor-id="zeav"><img src="http://baastest.droi.cn/Uploads/DocFile/576367f885e00.png" alt="cmd-markdown-logo"></p><p data-anchor-id="rdp9"><strong>注意：快速授权登录由系统账号APK是通过内部封装实现，无需调用API。</strong></p></div>
+</tbody></table><div class="md-section-divider"></div><h3 data-anchor-id="q1vr" id="快速授权登录">快速授权登录</h3><p data-anchor-id="rhgj">卓易授权SDK内部封装了快速登录子模块。在FreeMe OS系统环境下，如果系统账号APK已经登录且支持快速登录，卓易授权SDK会自动跳转到快速授权登录页面，借助系统已登录账号实现快速登录。同时，还可选择切换账号，使用其他账号登录，如下所示：  </p><p data-anchor-id="v1up"><img src="http://baastest.droi.cn/Uploads/DocFile/576367f885e00.png" alt="cmd-markdown-logo" title=""></p><p data-anchor-id="gozw"><strong>注意：快速授权登录由系统账号APK是通过内部封装实现，无需调用API。</strong></p></div>
 </body>
 </html>

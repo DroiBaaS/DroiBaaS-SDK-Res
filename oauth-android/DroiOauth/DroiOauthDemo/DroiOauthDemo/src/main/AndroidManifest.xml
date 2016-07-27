@@ -32,7 +32,6 @@
             android:value="Mobile" />
         <!-- App info end -->
 
-
         <!-- Main activity of the demo -->
         <activity
             android:name=".MainActivity"
@@ -42,12 +41,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Authorize activity for login -->
-        <activity
-            android:name="com.droi.sdk.oauth.ui.AuthActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize" >
         </activity>
     </application>
 
