@@ -8,7 +8,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="7dp"
     android:paddingTop="10dp"
-    tools:context="com.droi.sdk.feedback.DroiFeedbackActivity">
+    tools:context="com.droi.sdk.feedback.DroiFeedbackActivity" >
 
     <TextView
         android:id="@+id/droi_feedback_title"

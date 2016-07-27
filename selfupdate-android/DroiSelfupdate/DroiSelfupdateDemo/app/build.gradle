@@ -22,17 +22,14 @@ android {
 repositories {
     mavenCentral()
     maven {
-        url "https://github.com/DroiCloud/DroiBaaS-SDK-Android/raw/master/"
-    }
-    maven {
-        url "https://github.com/DroiBaaS/DroiBaaS-Android-SDK/raw/master/"
+        url "https://github.com/DroiBaaS/DroiBaaS-SDK-Android/raw/master/"
     }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.droi.sdk:droi-baas-android-sdk:+'
-    compile 'com.droi.sdk:selfupdate:0.0.002'
+    compile 'com.droi.sdk:Core:+'
+    compile 'com.droi.sdk:selfupdate:+'
     compile 'com.squareup.okhttp3:okhttp:3.0.1'
     compile 'com.android.support:support-v4:23.3.0'
 }
