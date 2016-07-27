@@ -23,33 +23,36 @@
 #### 快速入门
 由于卓易推送SDK基于卓易CoreSDK，所以请在安装卓易推送SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html)，并确保已经完成快速入门的所有步骤 。
 
-#### Android Studio环境安装
-Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
+#### Android Studio环境安装  
 
+1. 配置依赖关系  
+Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
 	dependencies {
 		/*其他依赖 */
 		compile 'com.droi.sdk:push:+'
 		compile 'com.android.support:support-v4:23.3.0'
 	}
 
-此外，需要在 AndroidManifest.xml 中配置secret，如下所示  
+2. 配置Secret  
+此外，需要在 AndroidManifest.xml 中配置secret，如下所示    
+  
+        <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
+	    <meta-data android:name="com.droi.sdk.secret_key" android:value="你的secret" />  
 
-	 <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
-	 <meta-data android:name="com.droi.sdk.secret_key" android:value="你的secret" />
-	 
 **注意：  
 应用工程的build.gradle中需要配置应用包名字段`applicationId`，否则会影响推送；** 
 
 
 #### Eclipse环境安装  
-[下载卓易推送SDK](http://baastest.droi.cn/Index/download.html)，解压后将 `droipushsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。**（ADT17及以上不需要手动导入）**  
 
+1. 安装步骤
+[下载卓易推送SDK](http://baastest.droi.cn/Index/download.html)，解压后将 `droipushsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。**（ADT17及以上不需要手动导入）**  
 将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件均以dp开头）**。
 
+2. 组件配置
 在 AndroidManifest.xml 中进行必要的配置  
-组件配置  
 
-	    <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
+        <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
 	    <meta-data android:name="com.droi.sdk.secret_key" android:value="你的secret" />
 
 		<!--注册推送服务-->
@@ -97,10 +100,10 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 	    	</intent-filter>
 		</activity>
 
-**注意：  
-DroiPushService需要配置服务的版本号字段SERVICE_VERSION，否则可能会影响推送效果；** 
+    **注意：  
+    DroiPushService需要配置服务的版本号字段SERVICE_VERSION，否则可能会影响推送效果；** 
 
-权限配置  
+3. 权限配置  
 
     	<!-- permission used in push sdk -->
     	<uses-permission android:name="android.permission.WAKE_LOCK" />
