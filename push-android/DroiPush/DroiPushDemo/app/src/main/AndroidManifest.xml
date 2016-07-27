@@ -9,19 +9,7 @@
         android:targetSdkVersion="19" />
 
     <!-- permission used in core sdk -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
-    <!-- permission used in push sdk -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.FLASHLIGHT" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:name=".MyApplication"
@@ -47,7 +35,6 @@
             android:value="Mobile" />
         <!-- app info end -->
 
-
         <!-- main activity of demo -->
         <activity
             android:name="com.droi.sdk.pushdemo.MainActivity"
@@ -62,52 +49,6 @@
         <!-- demo activity to test open activity message -->
         <activity android:name="com.droi.sdk.pushdemo.OpenActivityDemo" />
 
-        <service
-            android:name="com.droi.sdk.push.DroiPushService"
-            android:exported="true"
-            android:process=":pushservice" >
-            <meta-data
-                android:name="SERVICE_VERSION"
-                android:value="1.0.1" >
-            </meta-data>
-
-            <intent-filter>
-                <action android:name="com.droi.sdk.push.action.START" />
-            </intent-filter>
-        </service>
-
-        <receiver android:name="com.droi.sdk.push.TickAlarmReceiver" >
-        </receiver>
-        <receiver android:name="com.droi.sdk.push.DroiPushReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-                <action android:name="android.intent.action.PACKAGE_ADDED" />
-                <action android:name="android.intent.action.PACKAGE_REPLACED" />
-
-                <data android:scheme="package" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="android.intent.action.PHONE_STATE" />
-                <action android:name="android.intent.action.USER_PRESENT" />
-                <action android:name="android.intent.action.USER_CLEARNOTIFY" />
-                <action android:name="com.droi.sdk.push.action.DATA" />
-                <action android:name="com.droi.sdk.pushdemo.Action.START" />
-                <action android:name="com.droi.sdk.push.action.REMOVE_NOTIFICATION" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name="com.droi.sdk.push.DroiPushActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait"
-            android:theme="@style/DroiDialogStyle" >
-            <intent-filter>
-                <action android:name="com.droi.sdk.push.action.SHOW_DETAIL" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
