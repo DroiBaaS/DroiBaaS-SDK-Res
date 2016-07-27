@@ -6,139 +6,43 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0EF4F43A6A0CC8970CA289CC033F6387 /* Pods-DroiOAuthDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CB0C5B9737FB01CF0FEF8E1B18F9A /* Pods-DroiOAuthDemo-dummy.m */; };
-		9239E2F850D2396AF6074F059DF43B4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		209CB0C5B9737FB01CF0FEF8E1B18F9A /* Pods-DroiOAuthDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DroiOAuthDemo-dummy.m"; sourceTree = "<group>"; };
-		27BF8D9B12C98478AAFE00A05C1EFC14 /* Pods-DroiOAuthDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DroiOAuthDemo-resources.sh"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		52D751D16F536A9CBBAF0E390C66AD22 /* DroiCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiCoreSDK.framework; sourceTree = "<group>"; };
-		53D171DB565BB5CE7DE55D37296B94DF /* Pods-DroiOAuthDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DroiOAuthDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D2DCB4BE818D84C21EC73EAA0F46675 /* libPods-DroiOAuthDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DroiOAuthDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A631F5060DC2C4A1CEFF472A7A212CCE /* Pods-DroiOAuthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DroiOAuthDemo.release.xcconfig"; sourceTree = "<group>"; };
-		A7BFF82F122343E76F4037BF65E06D72 /* Pods-DroiOAuthDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DroiOAuthDemo-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F5911F9788FCF8B4A4F9506A6E00B988 /* Pods-DroiOAuthDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DroiOAuthDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F6995A85D2E585D177EE2DA4CAEC87B6 /* Pods-DroiOAuthDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DroiOAuthDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		5C040C5A9D524BFCBE7BFDD640C22167 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9239E2F850D2396AF6074F059DF43B4C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		4B72B6B3D09B70D175B73A94F8F72347 /* Products */ = {
+		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D2DCB4BE818D84C21EC73EAA0F46675 /* libPods-DroiOAuthDemo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7018573299435BCFF3A92CA340CEF075 /* Pods */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC91561FF4446A057C99AD13F0CE2432 /* DroiCoreSDK */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		75FB9B7B33FE65A96FA598466A0B579C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9BAB30D09BB10C8C6E13C1965C7598D6 /* Pods-DroiOAuthDemo */,
-			);
-			name = "Targets Support Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7018573299435BCFF3A92CA340CEF075 /* Pods */,
-				4B72B6B3D09B70D175B73A94F8F72347 /* Products */,
-				75FB9B7B33FE65A96FA598466A0B579C /* Targets Support Files */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				09C5E90726D2521A760312DBF50D9358 /* Products */,
+				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9BAB30D09BB10C8C6E13C1965C7598D6 /* Pods-DroiOAuthDemo */ = {
+		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F5911F9788FCF8B4A4F9506A6E00B988 /* Pods-DroiOAuthDemo-acknowledgements.markdown */,
-				53D171DB565BB5CE7DE55D37296B94DF /* Pods-DroiOAuthDemo-acknowledgements.plist */,
-				209CB0C5B9737FB01CF0FEF8E1B18F9A /* Pods-DroiOAuthDemo-dummy.m */,
-				A7BFF82F122343E76F4037BF65E06D72 /* Pods-DroiOAuthDemo-frameworks.sh */,
-				27BF8D9B12C98478AAFE00A05C1EFC14 /* Pods-DroiOAuthDemo-resources.sh */,
-				F6995A85D2E585D177EE2DA4CAEC87B6 /* Pods-DroiOAuthDemo.debug.xcconfig */,
-				A631F5060DC2C4A1CEFF472A7A212CCE /* Pods-DroiOAuthDemo.release.xcconfig */,
 			);
-			name = "Pods-DroiOAuthDemo";
-			path = "Target Support Files/Pods-DroiOAuthDemo";
-			sourceTree = "<group>";
-		};
-		BB26AB64640688700F26E65B7FCF8F5F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52D751D16F536A9CBBAF0E390C66AD22 /* DroiCoreSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CC91561FF4446A057C99AD13F0CE2432 /* DroiCoreSDK */ = {
-			isa = PBXGroup;
-			children = (
-				BB26AB64640688700F26E65B7FCF8F5F /* Frameworks */,
-			);
-			path = DroiCoreSDK;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		6D500CD77A4E3B00309552B259B13B8A /* Pods-DroiOAuthDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75298C3F8093D7884F8FE92004038D42 /* Build configuration list for PBXNativeTarget "Pods-DroiOAuthDemo" */;
-			buildPhases = (
-				7FDB238AFC87CB017AE664DE0C6AA118 /* Sources */,
-				5C040C5A9D524BFCBE7BFDD640C22167 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-DroiOAuthDemo";
-			productName = "Pods-DroiOAuthDemo";
-			productReference = 9D2DCB4BE818D84C21EC73EAA0F46675 /* libPods-DroiOAuthDemo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -155,44 +59,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4B72B6B3D09B70D175B73A94F8F72347 /* Products */;
+			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6D500CD77A4E3B00309552B259B13B8A /* Pods-DroiOAuthDemo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		7FDB238AFC87CB017AE664DE0C6AA118 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0EF4F43A6A0CC8970CA289CC033F6387 /* Pods-DroiOAuthDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
 /* Begin XCBuildConfiguration section */
-		72A16D1BD1EA0E5A9FF26921548E86F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6995A85D2E585D177EE2DA4CAEC87B6 /* Pods-DroiOAuthDemo.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -231,23 +106,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
-		};
-		D57666738351835C255E636856BAB72E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A631F5060DC2C4A1CEFF472A7A212CCE /* Pods-DroiOAuthDemo.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -291,15 +149,6 @@
 			buildConfigurations = (
 				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
 				FB45FFD90572718D82AB9092B750F0CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75298C3F8093D7884F8FE92004038D42 /* Build configuration list for PBXNativeTarget "Pods-DroiOAuthDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72A16D1BD1EA0E5A9FF26921548E86F6 /* Debug */,
-				D57666738351835C255E636856BAB72E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
