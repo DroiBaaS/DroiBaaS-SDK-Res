@@ -6,139 +6,43 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D3DCB51AF80BC064D247AC9E75FF4F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		FF1272F1858BAEDCC282D855A7FB984B /* Pods-DroiFeedbackDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EFFCFD41CA192009F66E5EFD4A03D3 /* Pods-DroiFeedbackDemo-dummy.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		03EFFCFD41CA192009F66E5EFD4A03D3 /* Pods-DroiFeedbackDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DroiFeedbackDemo-dummy.m"; sourceTree = "<group>"; };
-		292F1CCC223BF6B93E96B2B7E030A511 /* Pods-DroiFeedbackDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DroiFeedbackDemo.release.xcconfig"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		52D751D16F536A9CBBAF0E390C66AD22 /* DroiCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiCoreSDK.framework; sourceTree = "<group>"; };
-		9B0809F6CAAB3CD14F14071197474D93 /* Pods-DroiFeedbackDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DroiFeedbackDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		B029623855FD37A70B3249435D6D45F6 /* Pods-DroiFeedbackDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DroiFeedbackDemo-resources.sh"; sourceTree = "<group>"; };
-		B4EFA595C5D5CE1EFE3292D8030F0F67 /* Pods-DroiFeedbackDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DroiFeedbackDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C354EE2020C7AB24F53CE1F222648634 /* Pods-DroiFeedbackDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DroiFeedbackDemo-frameworks.sh"; sourceTree = "<group>"; };
-		DC540D5057AAF73CC57C10B6F14B9EEF /* Pods-DroiFeedbackDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DroiFeedbackDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DEB426E1F66385567FCB959F8A9AE09F /* libPods-DroiFeedbackDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DroiFeedbackDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		BBD8B345958261F6CDF313DFD1DCF3B2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3DCB51AF80BC064D247AC9E75FF4F77 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		0F43D054040A7BC40E7AE4424B245C51 /* Products */ = {
+		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEB426E1F66385567FCB959F8A9AE09F /* libPods-DroiFeedbackDemo.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		55E1A2432611520CD594176F360BD1C8 /* Targets Support Files */ = {
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93992CD9F820DDF64C71E599D3A0D429 /* Pods-DroiFeedbackDemo */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7018573299435BCFF3A92CA340CEF075 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC91561FF4446A057C99AD13F0CE2432 /* DroiCoreSDK */,
-			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7018573299435BCFF3A92CA340CEF075 /* Pods */,
-				0F43D054040A7BC40E7AE4424B245C51 /* Products */,
-				55E1A2432611520CD594176F360BD1C8 /* Targets Support Files */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				09C5E90726D2521A760312DBF50D9358 /* Products */,
+				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		93992CD9F820DDF64C71E599D3A0D429 /* Pods-DroiFeedbackDemo */ = {
+		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC540D5057AAF73CC57C10B6F14B9EEF /* Pods-DroiFeedbackDemo-acknowledgements.markdown */,
-				9B0809F6CAAB3CD14F14071197474D93 /* Pods-DroiFeedbackDemo-acknowledgements.plist */,
-				03EFFCFD41CA192009F66E5EFD4A03D3 /* Pods-DroiFeedbackDemo-dummy.m */,
-				C354EE2020C7AB24F53CE1F222648634 /* Pods-DroiFeedbackDemo-frameworks.sh */,
-				B029623855FD37A70B3249435D6D45F6 /* Pods-DroiFeedbackDemo-resources.sh */,
-				B4EFA595C5D5CE1EFE3292D8030F0F67 /* Pods-DroiFeedbackDemo.debug.xcconfig */,
-				292F1CCC223BF6B93E96B2B7E030A511 /* Pods-DroiFeedbackDemo.release.xcconfig */,
 			);
-			name = "Pods-DroiFeedbackDemo";
-			path = "Target Support Files/Pods-DroiFeedbackDemo";
-			sourceTree = "<group>";
-		};
-		BB26AB64640688700F26E65B7FCF8F5F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52D751D16F536A9CBBAF0E390C66AD22 /* DroiCoreSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		CC91561FF4446A057C99AD13F0CE2432 /* DroiCoreSDK */ = {
-			isa = PBXGroup;
-			children = (
-				BB26AB64640688700F26E65B7FCF8F5F /* Frameworks */,
-			);
-			path = DroiCoreSDK;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		B3914EACE747E113E41222A30A43B5E0 /* Pods-DroiFeedbackDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E7AACBF00EEB90BE4BD59C6C39826E1 /* Build configuration list for PBXNativeTarget "Pods-DroiFeedbackDemo" */;
-			buildPhases = (
-				E4040DFCBF75EA0B67EA5AD33B302226 /* Sources */,
-				BBD8B345958261F6CDF313DFD1DCF3B2 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-DroiFeedbackDemo";
-			productName = "Pods-DroiFeedbackDemo";
-			productReference = DEB426E1F66385567FCB959F8A9AE09F /* libPods-DroiFeedbackDemo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -155,61 +59,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0F43D054040A7BC40E7AE4424B245C51 /* Products */;
+			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B3914EACE747E113E41222A30A43B5E0 /* Pods-DroiFeedbackDemo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		E4040DFCBF75EA0B67EA5AD33B302226 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FF1272F1858BAEDCC282D855A7FB984B /* Pods-DroiFeedbackDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
 /* Begin XCBuildConfiguration section */
-		00939C9E0ABAFE56ACA71524A79F9426 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 292F1CCC223BF6B93E96B2B7E030A511 /* Pods-DroiFeedbackDemo.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A462D3E67908FD8EEE69549AC374F678 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4EFA595C5D5CE1EFE3292D8030F0F67 /* Pods-DroiFeedbackDemo.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -291,15 +149,6 @@
 			buildConfigurations = (
 				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
 				FB45FFD90572718D82AB9092B750F0CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E7AACBF00EEB90BE4BD59C6C39826E1 /* Build configuration list for PBXNativeTarget "Pods-DroiFeedbackDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A462D3E67908FD8EEE69549AC374F678 /* Debug */,
-				00939C9E0ABAFE56ACA71524A79F9426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

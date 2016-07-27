@@ -1,10 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DroiOAuthDemo' do
-
 pod 'DroiCoreSDK', '~> 0.5.1756'
 post_install do |installer|
 require './Pods/DroiCoreSDK/scripts/postInstall.rb'
 DroiCoreParser.installParser()
 end
+
 end

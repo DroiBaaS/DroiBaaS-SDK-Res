@@ -17,8 +17,8 @@
 		F653E6B21D46533F0065F654 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F653E6B01D46533F0065F654 /* LaunchScreen.storyboard */; };
 		F653E6BC1D46539B0065F654 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F653E6BA1D46539B0065F654 /* FeedbackViewController.m */; };
 		F653E6BD1D46539B0065F654 /* FeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F653E6BB1D46539B0065F654 /* FeedbackViewController.xib */; };
-		F653E6BF1D46543E0065F654 /* DroiFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F653E6BE1D46543E0065F654 /* DroiFeedback.framework */; };
-		F653E6C01D4654490065F654 /* DroiFeedback.framework in Resources */ = {isa = PBXBuildFile; fileRef = F653E6BE1D46543E0065F654 /* DroiFeedback.framework */; };
+		F676C7791D485DF70004C460 /* DroiFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F676C7781D485DF70004C460 /* DroiFeedback.framework */; };
+		F676C77A1D485E150004C460 /* DroiFeedback.framework in Resources */ = {isa = PBXBuildFile; fileRef = F676C7781D485DF70004C460 /* DroiFeedback.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		F653E6B91D46539B0065F654 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		F653E6BA1D46539B0065F654 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		F653E6BB1D46539B0065F654 /* FeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackViewController.xib; sourceTree = "<group>"; };
-		F653E6BE1D46543E0065F654 /* DroiFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiFeedback.framework; sourceTree = "<group>"; };
+		F676C7781D485DF70004C460 /* DroiFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DroiFeedback.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F653E6BF1D46543E0065F654 /* DroiFeedback.framework in Frameworks */,
 				CA79E9E307A778759E31A8F2 /* libPods-DroiFeedbackDemo.a in Frameworks */,
+				F676C7791D485DF70004C460 /* DroiFeedback.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 		F653E6961D46533F0065F654 = {
 			isa = PBXGroup;
 			children = (
-				F653E6BE1D46543E0065F654 /* DroiFeedback.framework */,
+				F676C7781D485DF70004C460 /* DroiFeedback.framework */,
 				F653E6A11D46533F0065F654 /* DroiFeedbackDemo */,
 				F653E6A01D46533F0065F654 /* Products */,
 				B760699618499BD8510C9870 /* Pods */,
@@ -143,8 +143,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F653E6B61D46533F0065F654 /* Build configuration list for PBXNativeTarget "DroiFeedbackDemo" */;
 			buildPhases = (
-				67CF0AD20D83854D494E286F /* Check Pods Manifest.lock */,
 				0B8A74DAFE99DE4B10234FD9 /* DroiBaaS Preprocessor */,
+				67CF0AD20D83854D494E286F /* Check Pods Manifest.lock */,
 				F653E69B1D46533F0065F654 /* Sources */,
 				F653E69C1D46533F0065F654 /* Frameworks */,
 				F653E69D1D46533F0065F654 /* Resources */,
@@ -198,7 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F653E6C01D4654490065F654 /* DroiFeedback.framework in Resources */,
+				F676C77A1D485E150004C460 /* DroiFeedback.framework in Resources */,
 				F653E6B21D46533F0065F654 /* LaunchScreen.storyboard in Resources */,
 				F653E6AF1D46533F0065F654 /* Assets.xcassets in Resources */,
 				F653E6BD1D46539B0065F654 /* FeedbackViewController.xib in Resources */,

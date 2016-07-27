@@ -1,5 +1,13 @@
 <resources>
 
+    <!-- Notification title style -->
+    <style name="dp_notification_title_style" parent="@android:style/TextAppearance.StatusBar.EventContent.Title">
+    </style>
+
+    <!-- Notification summary style -->
+    <style name="dp_notification_summary_style" parent="@android:style/TextAppearance.StatusBar.EventContent">
+    </style>
+
     <!-- Style to show floating and translucent activity -->
     <style name="DroiDialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowIsFloating">true</item>
