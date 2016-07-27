@@ -20,8 +20,25 @@
 由于卓易统计SDK基于卓易CoreSDK，所以请在安装卓易统计SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html) 。
 
 ### Eclipse 安装SDK
-下载[SDK压缩包]()，解压后将 `droiselfupdatingsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`  
-将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件都以droi开头）**。
+1. 下载[SDK压缩包]()，解压后将 `droiselfupdatingsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`  
+将包含.so文件的文件直接复制到工程目录下，将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件都以droi开头）**。
+2. 在 AndroidManifest 中配置组件 
+    ``` xml
+    <manifest...>
+    <application...>
+        <!--注册自更新对话框-->
+        <activity
+            android:name="com.droi.sdk.selfupdating.DroiUpdateDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.droi.sdk.selfupdate.NotificationClickReceiver" />
+    </application>
+    </manifest>
+    ```
 
 ### Android Studio 安装SDK
 Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
@@ -33,22 +50,6 @@ dependencies {
 }
 ```
 
-### 组件与权限配置
-``` xml
-<manifest...>
-<application...>
-    <!--注册自更新对话框-->
-    <activity
-        android:name="com.droi.sdk.selfupdating.DroiUpdateDialogActivity"
-        android:configChanges="orientation|keyboardHidden|screenSize"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-        </intent-filter>
-    </activity>
-</application>
-</manifest>
-```
 ## 使用
 
 ### 初始化

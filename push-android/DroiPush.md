@@ -23,30 +23,34 @@
 #### 快速入门
 由于卓易推送SDK基于卓易CoreSDK，所以请在安装卓易推送SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html)，并确保已经完成快速入门的所有步骤 。
 
-#### Eclipse环境安装  
-[下载卓易推送SDK](http://baastest.droi.cn/Index/download.html)，解压后将 `droipushsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。**（ADT17及以上不需要手动导入）**  
-
-将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件junyij均以dp开头）**。
-
-
 #### Android Studio环境安装
 Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
 
 	dependencies {
 		/*其他依赖 */
-		compile 'com.droi.sdk:push:1.0.001'
+		compile 'com.droi.sdk:push:+'
 		compile 'com.android.support:support-v4:23.3.0'
 	}
 
-### 组件与权限配置
+此外，需要在 AndroidManifest.xml 中配置secret，如下所示  
+
+	 <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
+	 <meta-data android:name="com.droi.sdk.secret_key" android:value="你的secret" />
+	 
+**注意：  
+应用工程的build.gradle中需要配置应用包名字段`applicationId`，否则会影响推送；** 
+
+
+#### Eclipse环境安装  
+[下载卓易推送SDK](http://baastest.droi.cn/Index/download.html)，解压后将 `droipushsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。**（ADT17及以上不需要手动导入）**  
+
+将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件均以dp开头）**。
+
 在 AndroidManifest.xml 中进行必要的配置  
 组件配置  
 
 	    <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
-	    <meta-data
-	        android:name="PUSH_MESSAGE_SECRET"
-	        android:value="YOUR_SECRET" >
-	    </meta-data>
+	    <meta-data android:name="com.droi.sdk.secret_key" android:value="你的secret" />
 
 		<!--注册推送服务-->
 		<service
@@ -55,7 +59,7 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 			<!--当前使用推送服务的版本号-->
 			<meta-data
                 android:name="SERVICE_VERSION"
-                android:value="CURRENT_SERVICE_VERSION" >
+                android:value="1.0.1" >
             </meta-data>
 	    	<intent-filter>
 	        	<action android:name="com.droi.sdk.push.action.START" />
@@ -77,7 +81,7 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 	        	<action android:name="android.intent.action.USER_CLEARNOTIFY" />
 	        	<action android:name="com.droi.sdk.push.action.DATA" />
 	        	<!-- 请使用当前应用的包名作为前缀 -->
-	        	<action android:name="YOUR_PACKAGE_NAME.Action.START" />
+	        	<action android:name="你的应用包名.Action.START" />
 	    	</intent-filter>
 		</receiver>
 		<!--注册推送弹出框Activity组件-->

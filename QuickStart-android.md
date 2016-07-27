@@ -76,6 +76,14 @@
         compile 'com.droi.sdk:Core:0.5.+'
     }
     ```
+3. 在 AndroidManifest 中加入 DroiBaaS 开发平台产生的 metadata 以及渠道号 
+
+    ``` xml
+    <meta-data android:name="com.droi.sdk.application_id" android:value="[DroiBaaS Application ID]" />
+    <meta-data android:name="com.droi.sdk.platform_key" android:value="[DroiBaaS ClientKey]" />
+    <meta-data android:name="com.droi.sdk.channel_name" android:value="[ChannelName]" />
+
+    ```
     
 ### <a id="eclipse_start"></a>Eclipse 安装
 
@@ -103,9 +111,9 @@
 
 ![annotationjar](http://baastest.droi.cn/Uploads/DocFile/576a4d153ae87.png)
 
-### 配置 AndroidManifest
+#### 配置 AndroidManifest
 
-1. 加入 DroiBaaS SDK 所需要的 Permissions，如使用Android Studio开发，所需要的 Permissions已集成到aar中，无需手动添加，可忽略此步骤 
+1. 加入 DroiBaaS SDK 所需要的 Permissions
 
     ``` xml
     <uses-permission android:name="android.permission.INTERNET" />
@@ -117,7 +125,7 @@
 
     ```
     
-2. 加入 DroiBaaS 开发平台产生的 metadata以及渠道号 
+2. 加入 DroiBaaS 开发平台产生的 metadata 以及渠道号 
 
     ``` xml
     <meta-data android:name="com.droi.sdk.application_id" android:value="[DroiBaaS Application ID]" />
