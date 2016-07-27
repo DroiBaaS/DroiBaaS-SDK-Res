@@ -118,7 +118,7 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 
 		DroiPush.initialize(context)；  
 		
-2. 获取设备与应用ID、渠道
+2. 获取设备与应用ID、渠道  
 SDK提供接口获取设备ID(deviceId)、应用ID(appId)、渠道号(channel)以及密码(secret)信息。其中，deviceId首次生成必须联网，appId、channel以及secret通过读取AndroidManifest配置内容返回相应数值。
 
 	- 获取deviceId  
