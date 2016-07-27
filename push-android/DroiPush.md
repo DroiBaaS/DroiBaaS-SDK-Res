@@ -26,12 +26,12 @@
 #### Android Studio环境安装  
 
 1. 配置依赖关系  
-Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
-	dependencies {
-		/*其他依赖 */
-		compile 'com.droi.sdk:push:+'
-		compile 'com.android.support:support-v4:23.3.0'
-	}
+Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：  
+	dependencies {  
+		/*其他依赖 */  
+		compile 'com.droi.sdk:push:+'  
+		compile 'com.android.support:support-v4:23.3.0'  
+	}  
 
 2. 配置Secret  
 此外，需要在 AndroidManifest.xml 中配置secret，如下所示    
