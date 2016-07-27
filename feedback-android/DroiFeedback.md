@@ -79,7 +79,6 @@ DroiFeedback.initialize(this);
    * `Color.argb(int alpha, int red, int green, int blue)`
    * `Color.rgb(int red, int green, int blue)`,这时alpha隐式设为255（完全不透明）
    * `Color.parseColor(String colorString)`,colorString可以是RGB(#RRGGBB),ARGB(#AARRGGBB)或者颜色名称，具体请查看android文档
-![](http://baastest.droi.cn/Uploads/DocFile/576e2a7736ca3.png)
 
 ### 后台页面
 在后台页面可以查看用户反馈量、今日回复量和总反馈量。  
