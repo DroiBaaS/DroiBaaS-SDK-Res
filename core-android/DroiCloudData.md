@@ -238,8 +238,6 @@ if (error.isOk()) {
 
 其中建立查询条件使用的```DroiCondition```类，它提供了简单的条件式设置以及复杂的查询条件(AND及OR)组合。目前```DroiCondition```提供的查询条件有：
 
-<center>
-
 | 常量名称 | 说明 |
 |---------|:---------|
 | **LT** | Less Than(<)，小于 |
@@ -258,8 +256,6 @@ if (error.isOk()) {
 | **NOTENDSWITH** | Not Ends With, 结尾字符串不为指定的字符串 |
 | **IN** | IN, 数据是否符合所传入的列表。如```DroiCondition.cond("price", DroiCondition.Type.IN, "70, 80");```，代表要查询price是70或80的数据 |
 | **NOTIN** | NOT IN，数据是否不符合所传入的列表 |
-
-</center>
 
 #### 复杂的查询条件 
 开发者如果需要使用较复杂的查询条件，一样也可以使用```DroiCondition```类来达到需求。假设一个情景，需要查询书名有包含**'DIY'**且price小于80或是书名有包含**'HOW'**且price小于30的查询条件。我们可以写成  
@@ -428,8 +424,6 @@ if (DroiPreference.instance().isReady()) {
 但是这些资料不需要实际储存在云端数据库中。这大大减少应用程序对云端数据库的容量需求，而且也可以做到不同设备间的数据交换的目的。  
 `DroiCloudCache`与`DroiObject`数据最大的不同点在于由`DroiCloudCache`所储存的数据并不会真正储存到云端数据库中，它的资料是暂存在云端系统内存中。以下表格是两者的简单比较：  
 
-<center>
-
 |  	| DroiCloudCache 	| DroiObject 	|
 |--------------	|:----------------:|:------------:|
 | 使用云端数据库 	| 否 	| 是 	|
@@ -437,7 +431,6 @@ if (DroiPreference.instance().isReady()) {
 | 数据是否会消失 	| 是 	| 否 	|
 | 数据形式 	| 键值(Key/Value) 	| 记录(Record)
 
-</center>  
 
 由于数据并不保证永久存在于系统中，在实际使用上请开发者注意这个数据类别的特性。请勿使用这一功能去储存一些重要的数据。  
 
