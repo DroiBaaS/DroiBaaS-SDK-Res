@@ -31,7 +31,7 @@ DroiBaaS 使用最简便的方式去存储数据至云端或是由云端数据�
 `DroiObject`对象在上传到云端前，会将包含在`DroiObject`内的数据(key-value)转换为JSON数据。目前```DroiObject```支持的数据格式有  
 
 * `String`字符串
-* `Number`数字
+* `Number`数字 **暂不支持`long`类型**
 * `Boolean`布尔值
 * `Array`数组（数组内数据格式也必须在此列表)
 * `byte []`字节数组
@@ -410,7 +410,6 @@ DroiBaaS SDK 提供了一个全域只读的设置可让应用程序使用，这�
 ``` java
 if (DroiPreference.instance().isReady()) {
     int intValue = DroiPreference.instance().getInt("IntKey", -1);
-    long longValue = DroiPreference.instance().getLong("LongKey", -1);
     boolean boolValue = DroiPreference.instance().getBoolean("BoolKey", false);
     double doubleValue = DroiPreference.instance().getDouble("DoubleKey", -1);
     JSONObject jsonValue = DroiPreference.instance().getJsonObject("JsonKey");
