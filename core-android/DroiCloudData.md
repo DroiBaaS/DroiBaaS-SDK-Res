@@ -31,7 +31,7 @@ DroiBaaS 使用最简便的方式去存储数据至云端或是由云端数据�
 `DroiObject`对象在上传到云端前，会将包含在`DroiObject`内的数据(key-value)转换为JSON数据。目前```DroiObject```支持的数据格式有  
 
 * `String`字符串
-* `Number`数字 **暂不支持`long`类型**
+* `Number`数字 （暂不支持`long`类型）
 * `Boolean`布尔值
 * `Array`数组（数组内数据格式也必须在此列表)
 * `byte []`字节数组
