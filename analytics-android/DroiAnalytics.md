@@ -1,4 +1,4 @@
-# 统计分析
+﻿# 统计分析
 
 ## 简介
 
@@ -23,6 +23,7 @@
 1. 下载[SDK压缩包]()，解压后将 `droianalyticssdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。***（ADT17及以上不需要手动导入）***
 
 2. 需要在 AndroidManifest 中配置权限
+
     ``` xml
     <uses-permission android:name="android.permission.GET_TASKS" />
     ```
