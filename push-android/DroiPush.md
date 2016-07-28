@@ -26,12 +26,12 @@
 #### Android Studio环境安装  
 
 1. 配置依赖关系  
-Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：
-	dependencies {
-		/*其他依赖 */
-		compile 'com.droi.sdk:push:+'
-		compile 'com.android.support:support-v4:23.3.0'
-	}
+Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖：  
+	dependencies {  
+		/*其他依赖 */  
+		compile 'com.droi.sdk:push:+'  
+		compile 'com.android.support:support-v4:23.3.0'  
+	}  
 
 2. 配置Secret  
 此外，需要在 AndroidManifest.xml 中配置secret，如下所示    
@@ -45,11 +45,11 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 
 #### Eclipse环境安装  
 
-1. 安装步骤
+1. 安装步骤  
 [下载卓易推送SDK](http://baastest.droi.cn/Index/download.html)，解压后将 `droipushsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。**（ADT17及以上不需要手动导入）**  
 将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件均以dp开头）**。
 
-2. 组件配置
+2. 组件配置  
 在 AndroidManifest.xml 中进行必要的配置  
 
         <!--推送消息加密秘钥，应用创建后由平台自动生成，以下内容为示例-->
@@ -118,7 +118,7 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 
 		DroiPush.initialize(context)；  
 		
-2. 获取设备与应用ID、渠道
+2. 获取设备与应用ID、渠道  
 SDK提供接口获取设备ID(deviceId)、应用ID(appId)、渠道号(channel)以及密码(secret)信息。其中，deviceId首次生成必须联网，appId、channel以及secret通过读取AndroidManifest配置内容返回相应数值。
 
 	- 获取deviceId  

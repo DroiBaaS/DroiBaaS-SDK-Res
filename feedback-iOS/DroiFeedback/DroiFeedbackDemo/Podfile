@@ -2,6 +2,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DroiFeedbackDemo' do
+    
+pod 'DroiFeedbackSDK', '~> 0.0.9'
 pod 'DroiCoreSDK'
 post_install do |installer|
     require './Pods/DroiCoreSDK/scripts/postInstall.rb'
