@@ -33,7 +33,7 @@ Android Studio环境下只需要在Project的`build.gradle`中添加如下依赖
 ``` groovy
 dependencies {
     /*其他依赖 */
-    compile 'com.droi.sdk:analytics:1.0.+'
+    compile 'com.droi.sdk:analytics:+'
 }
 ```
 
