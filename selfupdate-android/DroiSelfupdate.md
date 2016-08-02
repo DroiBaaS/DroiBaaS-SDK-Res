@@ -29,7 +29,7 @@
     <application...>
         <!--注册自更新对话框-->
         <activity
-            android:name="com.droi.sdk.selfupdating.DroiUpdateDialogActivity"
+            android:name="com.droi.sdk.selfupdate.DroiUpdateDialogActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
             <intent-filter>
