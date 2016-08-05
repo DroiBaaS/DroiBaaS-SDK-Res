@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "421CCDD2865386BAE9AD3A845B46AF0C02B740D2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1ABD8F7FCBE42DB49E3AF7FAE808E4B32FEC7CAF" : 0,
+    "421CCDD2865386BAE9AD3A845B46AF0C02B740D2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "061225AF-A62B-4C7A-B114-B1996FA5E9FA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1ABD8F7FCBE42DB49E3AF7FAE808E4B32FEC7CAF" : "",
+    "421CCDD2865386BAE9AD3A845B46AF0C02B740D2" : "DroiBaaS-SDK-Res\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CoreSDKDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "core-iOS\/CoreSDK\/CoreSDKDemo\/CoreSDKDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DroiBaaS\/DroiPushSDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1ABD8F7FCBE42DB49E3AF7FAE808E4B32FEC7CAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DroiBaaS\/DroiBaaS-SDK-Res.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "421CCDD2865386BAE9AD3A845B46AF0C02B740D2"
+    }
+  ]
+}

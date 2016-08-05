@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="mql-7O-eMi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afz-vJ-lIC">
+                    <rect key="frame" x="40" y="285" width="240" height="30"/>
+                    <color key="backgroundColor" red="0.13839730850000001" green="0.499198692" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Blue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="0.2394449904" blue="0.28479832319999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="toBlue:" destination="-1" eventType="touchUpInside" id="l03-hQ-lic"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zy-aV-TKD">
+                    <rect key="frame" x="320" y="285" width="240" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.69320598821989532" blue="0.052453636730736983" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Green">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="1" green="0.2394449904" blue="0.28479832319999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="toGreen:" destination="-1" eventType="touchUpInside" id="OG4-FE-Oah"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.2394449904" blue="0.28479832319999998" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8Zy-aV-TKD" firstAttribute="width" secondItem="afz-vJ-lIC" secondAttribute="width" id="9zb-3I-jd2"/>
+                <constraint firstAttribute="trailing" secondItem="8Zy-aV-TKD" secondAttribute="trailing" constant="40" id="Qqg-Ew-UvI"/>
+                <constraint firstItem="afz-vJ-lIC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tog-mX-TRq"/>
+                <constraint firstItem="afz-vJ-lIC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="VBg-ky-F2d"/>
+                <constraint firstItem="8Zy-aV-TKD" firstAttribute="leading" secondItem="afz-vJ-lIC" secondAttribute="trailing" constant="40" id="bln-yY-2PN"/>
+                <constraint firstItem="8Zy-aV-TKD" firstAttribute="height" secondItem="afz-vJ-lIC" secondAttribute="height" id="gBe-nM-kjo"/>
+                <constraint firstItem="8Zy-aV-TKD" firstAttribute="centerY" secondItem="afz-vJ-lIC" secondAttribute="centerY" id="vVQ-8n-cIa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

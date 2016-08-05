@@ -5,9 +5,9 @@ target 'CoreSDKDemo' do
 
 pod 'LJLogView', '~> 1.0.0'
 
-pod 'DroiCoreSDK', '~> 0.5.1756'
+pod 'DroiCoreSDK'
 post_install do |installer|
-require './Pods/DroiCoreSDK/scripts/postInstall.rb'
-DroiCoreParser.installParser()
+    require './Pods/DroiCoreSDK/scripts/postInstall.rb'
+    DroiCoreParser.installParser()
 end
 end

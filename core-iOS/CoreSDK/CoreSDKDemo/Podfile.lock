@@ -1,15 +1,3 @@
-PODS:
-  - DroiCoreSDK (0.5.1756)
-  - LJLogView (1.0.0)
-
-DEPENDENCIES:
-  - DroiCoreSDK (~> 0.5.1756)
-  - LJLogView (~> 1.0.0)
-
-SPEC CHECKSUMS:
-  DroiCoreSDK: f5686ce5af469e3715a92df83585e54a7bb9cde4
-  LJLogView: a69bd449ffafc555a6acf376c0af912cbc1298b6
-
-PODFILE CHECKSUM: 99520d5dcfad46e075cf321ce5f1796d58c2956d
+PODFILE CHECKSUM: fda6c5abcd4b30fd5d4cfa777c2cfa08ef1a7a81
 
 COCOAPODS: 1.0.0.beta.4

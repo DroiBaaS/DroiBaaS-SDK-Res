@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0leurC6PlXfHzZwCY5B5RhhL15k=
+		tCUxL7wUiFA0pmoEAxZZ4Bbpd/w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -20,13 +20,27 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/DroiFeedback.h</key>
-		<data>
-		eI/w8DP8fb5biXhtjd3uBi7gbpw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			eI/w8DP8fb5biXhtjd3uBi7gbpw=
+			</data>
+			<key>hash2</key>
+			<data>
+			qq/fwT5/4V8l3GD+Iey9BzMvug9poLERyAucDUD5o9o=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		LK2r2L6kn071DQP96JQtbn5Jm7I=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			LK2r2L6kn071DQP96JQtbn5Jm7I=
+			</data>
+			<key>hash2</key>
+			<data>
+			iAm8SSP9HgVdL5z2vHsVRkW2dps+Xkk9IrH+3ykEmXM=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

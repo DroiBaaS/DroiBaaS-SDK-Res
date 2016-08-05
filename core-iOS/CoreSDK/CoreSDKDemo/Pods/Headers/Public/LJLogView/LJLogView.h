@@ -1,1 +1,0 @@
-../../../LJLogView/LJLogView/LJLogView.h

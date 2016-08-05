@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/DroiAnalytics.h</key>
 		<data>
-		f3J+/Sez5lsAy5g5gb1X/r8K3gU=
+		phk4jnQqSN2zwCo975XCD6sxsDQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fAMlbzh8GHL7DLDJGkd0g/M26mg=
+		2JmG6LshVxVgxqYNuzssNbG754A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -20,13 +20,27 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/DroiAnalytics.h</key>
-		<data>
-		f3J+/Sez5lsAy5g5gb1X/r8K3gU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			phk4jnQqSN2zwCo975XCD6sxsDQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			j4QJnjXqF1OUjMntD+sw9O9TQPKAr17PMFF1fHH+omo=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		n7FL8aZyaCA0nJ83H4NOHaewgXw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			n7FL8aZyaCA0nJ83H4NOHaewgXw=
+			</data>
+			<key>hash2</key>
+			<data>
+			CAOVxwUMXMj2TPmCbm6hFD/SVsv8yGSu/fxeNmIr9LY=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

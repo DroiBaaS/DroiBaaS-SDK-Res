@@ -4,17 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>DroiOAuthWebViewController.nib</key>
-		<data>
-		ZE0fIL/PE0sKdnwWOl2ebtK+h3Q=
-		</data>
 		<key>Headers/DroiOAuth.h</key>
 		<data>
-		xP/BJhAFIDfQojsTfWUKNqQOvnA=
+		8gSvZXPcY3RpA+4NrrX76LnYa/0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HLIRBm+QXBdO+VyOwns3Gv+WXXA=
+		9/60DfTzW98c351WQf8rO6qnEgI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -23,18 +19,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>DroiOAuthWebViewController.nib</key>
-		<data>
-		ZE0fIL/PE0sKdnwWOl2ebtK+h3Q=
-		</data>
 		<key>Headers/DroiOAuth.h</key>
-		<data>
-		xP/BJhAFIDfQojsTfWUKNqQOvnA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			8gSvZXPcY3RpA+4NrrX76LnYa/0=
+			</data>
+			<key>hash2</key>
+			<data>
+			chOyj7lTM8M3LD7GXZGw6m3N5jFCEyPDiSuUOAffb5Q=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		fei3vn9M6PpxowuFhJUDfy9ccAY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			fei3vn9M6PpxowuFhJUDfy9ccAY=
+			</data>
+			<key>hash2</key>
+			<data>
+			y5G7U5xVL+qzhHy1nhfSmy8KSqd84Y1r19v0BAr6dec=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

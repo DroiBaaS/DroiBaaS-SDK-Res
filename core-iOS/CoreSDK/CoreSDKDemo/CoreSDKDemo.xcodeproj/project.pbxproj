@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B45071CA1EA1DBB10246E48 /* libPods-CoreSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CE339C1AACC2BEE19ECF61 /* libPods-CoreSDKDemo.a */; };
 		AB2920CA5EB94CB6FFA46660 /* DroiBaaS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BE3D7289A58868ECE0C36ED /* DroiBaaS.plist */; };
 		C96C8AB7388E24D98CFBAC43 /* DroiBaaS.h in Headers */ = {isa = PBXBuildFile; fileRef = F5781762762282AAAA33819B /* DroiBaaS.h */; };
 		E53615F38BECA7BB304557C4 /* DroiBaaS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2D94C16B55511C430686B8 /* DroiBaaS.m */; };
@@ -94,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC9350A91D3F953300582331 /* libPods-CoreSDKDemo.a in Frameworks */,
+				6B45071CA1EA1DBB10246E48 /* libPods-CoreSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +250,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCA5D4151D348E26007FAC70 /* Build configuration list for PBXNativeTarget "CoreSDKDemo" */;
 			buildPhases = (
-				CC5244649614D3E362B49B38 /* DroiBaaS Preprocessor */,
 				A57B352AB16A54DECB7ECA66 /* Check Pods Manifest.lock */,
+				CC5244649614D3E362B49B38 /* DroiBaaS Preprocessor */,
 				FCA5D3FA1D348E26007FAC70 /* Sources */,
 				FCA5D3FB1D348E26007FAC70 /* Frameworks */,
 				FCA5D3FC1D348E26007FAC70 /* Resources */,
