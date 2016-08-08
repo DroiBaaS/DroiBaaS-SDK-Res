@@ -1,4 +1,4 @@
-﻿# 版本更新
+# 版本更新  
 
 ## 简介
 版本更新帮助开发者将应用升级到最新版本，可以让用户体验到应用的最新功能。
@@ -20,7 +20,7 @@
 由于卓易版本更新SDK基于卓易CoreSDK，所以请在安装卓易版本更新SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html) 。
 
 ### Eclipse 安装SDK
-1. 下载[SDK压缩包]()，解压后将 `droiselfupdatingsdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`  
+1. 下载[SDK压缩包]()，解压后将 `droiselfupdatingsdk.jar`和`Utility.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`  
 将包含.so文件的文件夹直接复制到工程目录下，将`res`文件夹直接复制到工程目录下，和工程本身`res`目录合并。请不要随意删除其中的文件**（`res`文件都以droi开头）**。
 2. 在 AndroidManifest 中配置组件
 
