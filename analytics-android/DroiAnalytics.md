@@ -1,9 +1,9 @@
-﻿# 统计分析
+# 统计分析
 
 ## 简介
 
 ### 什么是卓易统计分析
-卓易统计(DroiAnalytics)是一项面向移动应用开发者的数据统计服务。开发者集成DroiAnalytics SDK之后，应用的使用数据会传输到卓易统计服务器。开发者通过卓易数据分析后台可以查看数据的分析结果。开发者可以通过数据分析结果全方位了解用户行为，调整优化应用，为用户提供更好的产品体验。  
+卓易统计(DroiAnalytics)是一项面向移动应用开发者的数据统计服务。开发者集成卓易统计SDK之后，应用的使用数据会传输到卓易统计服务器。开发者通过卓易数据分析后台可以查看数据的分析结果。开发者可以通过数据分析结果全方位了解用户行为，调整优化应用，为用户提供更好的产品体验。  
 
 ### 卓易统计分析的工作原理
 卓易统计SDK，收集用户的信息、使用行为，为云端分析提供数据。主要收集的信息包括：  
@@ -16,6 +16,7 @@
 ![](http://baastest.droi.cn/Uploads/DocFile/5767a8b04ba5c.png) 
 
 ## 安装
+
 ### 快速入门
 由于卓易统计SDK基于卓易CoreSDK，所以请在安装卓易统计SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html)，并确保已经完成快速入门的所有步骤。
 
@@ -23,7 +24,6 @@
 1. 下载[SDK压缩包]()，解压后将 `droianalyticssdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。***（ADT17及以上不需要手动导入）***
 
 2. 需要在 AndroidManifest 中配置权限
-
     ``` xml
     <uses-permission android:name="android.permission.GET_TASKS" />
     ```
@@ -44,6 +44,7 @@ dependencies {
 ``` java
 DroiAnalytics.initialize(this);
 ```
+
 ### 用户使用统计
 会话（Session）代表在某一段时间内，用户与应用之间的交互。记录会话可获取新增用户、活跃用户、启动次数、使用时长等基本数据。
 一次完整的Session包括如下三种情况：  
@@ -88,6 +89,7 @@ public void onPause() {
     DroiAnalytics.onFragmentEnd(getActivity(), mPageName);
 }
 ```
+
 ### 自定义事件
 1. 计数事件  
 在需要统计的事件中调用如下方法：  
@@ -108,7 +110,7 @@ public void onPause() {
     ``` java
     Map<String,String> kv=new HashMap<String, String>();
     kv.put("itemName", "apple");
-    kv.put("count", 5);
+    kv.put("count", "5");
     int du = 10;//表示购买总金额
     String eventId = "buy";
     DroiAnalytics.onCalculateEvent(mContext, eventId, kv, du);
