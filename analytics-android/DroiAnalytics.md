@@ -133,7 +133,7 @@ SDK通过`Thread.UncaughtExceptionHandler`捕获程序崩溃日志，并在程�
 只有使用我们提供的Logger类记录的log，才能在崩溃时作为附加log信息上传，所以需要使用该类来替换Android的Log类。
 另外在开发时，可以通过以下方法来设置在LogCat中显示通过`Logger`产生的log信息（默认为true），在正式上线时设置为false。
 	``` java
-	DroiAnalytics.setDebugMode(true);
+	DroiAnalytics.setSandboxMode(true);
 	```
 
 2. 自定义错误信息  
