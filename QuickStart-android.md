@@ -47,6 +47,7 @@
         }
         dependencies {
             classpath 'com.android.tools.build:gradle:2.1.2'
+            // 需要使用Annotation Process Tool功能时添加
             classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         }
     }
@@ -55,7 +56,7 @@
 2. 在`app`下的`build.gradle`文件增加`DroiCore SDK`及相关的`libraries`如下：
 
     ``` groovy
-    // 开启使用APT功能
+    // 开启使用APT功能，需要使用Annotation Process Tool功能时添加
     apply plugin: 'android-apt'
     
     repositories {
@@ -68,17 +69,18 @@
 
     dependencies {
         compile fileTree(dir: 'libs', include: ['*.jar'])
-        // 使用APT工具产生辅助程序代码
-        apt 'com.droi.sdk:annotationprocessor:0.5.+'
+        // 使用APT工具产生辅助程序代码，需要使用Annotation Process Tool功能时添加
+        apt 'com.droi.sdk:annotationprocessor:+'
         // DroiCore SDK使用的3rd http函数库
         compile 'com.squareup.okhttp3:okhttp:3.0.1'
         // DroiCore SDK
-        compile 'com.droi.sdk:Core:0.5.+'
+        compile 'com.droi.sdk:Core:+'
     }
     ```
 3. 在 AndroidManifest 中加入 DroiBaaS 开发平台产生的 metadata 以及渠道号 
 
     ``` xml
+    <!--Application ID 有sandbox和producation之分，在开发时使用sandbox，正式上线时切换为production，另外需要后台的切换动作-->
     <meta-data android:name="com.droi.sdk.application_id" android:value="[DroiBaaS Application ID]" />
     <meta-data android:name="com.droi.sdk.platform_key" android:value="[DroiBaaS ClientKey]" />
     <meta-data android:name="com.droi.sdk.channel_name" android:value="[ChannelName]" />
@@ -89,7 +91,7 @@
 
 #### 安装aar/jar文件
 
-1. 请下载最新的 DroiBaaS SDK([aar](https://github.com/DroiBaaS/DroiBaaS-SDK-Android/tree/master/com/droi/sdk/Core/0.5.2898), [jar](https://github.com/DroiBaaS/DroiBaaS-SDK-Android/tree/master/com/droi/sdk/Core/0.5.2898_jar))，把 `Core.aar/.jar` 复制到工程下的 `libs` 目录；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`
+1. 请下载最新的 DroiBaaS SDK([Core.jar](https://github.com/DroiBaaS/DroiBaaS-SDK-Android/tree/master/com/droi/sdk/Core))，把 `Core.jar` 复制到工程下的 `libs` 目录；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`
 
 2. 请到[OkHttp](http://square.github.io/okhttp/)官方网站下载Okio以及OkHttp两个依赖库并复制到工程下的`libs`目录。
 
@@ -101,6 +103,7 @@
 
 #### 设置 DroiQuery Annotation tool
 
+**注意：**此步骤可选，在需要使用APT工具产生辅助程序代码时设置
 1. 下载 library 并放工程目录下。(请勿放到工程目录下的 libs ，会有错误)[下载链接](https://github.com/DroiBaaS/DroiBaaS-SDK-Android/blob/master/com/droi/sdk/annotationprocessor/0.5.2898/annotationprocessor-0.5.2898.jar)
 
 2. 在工程上按右键按 `Properties`，选择 `Java Compiler` -> `Annotation Processing`，把 `Enable project specific settings`，`Enable annotation processing`，`Enable processing in editor` 都打勾
@@ -128,6 +131,7 @@
 2. 加入 DroiBaaS 开发平台产生的 metadata 以及渠道号 
 
     ``` xml
+    <!--Application ID 有sandbox和producation之分，在开发时使用sandbox，正式上线时切换为production，另外需要后台的切换动作-->
     <meta-data android:name="com.droi.sdk.application_id" android:value="[DroiBaaS Application ID]" />
     <meta-data android:name="com.droi.sdk.platform_key" android:value="[DroiBaaS ClientKey]" />
     <meta-data android:name="com.droi.sdk.channel_name" android:value="[ChannelName]" />
