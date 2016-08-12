@@ -18,7 +18,7 @@
 ## 安装
 
 ### 快速入门
-由于卓易统计SDK基于卓易CoreSDK，所以请在安装卓易统计SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/docStart.html)，并确保已经完成快速入门的所有步骤。
+由于卓易统计SDK基于卓易CoreSDK，所以请在安装卓易统计SDK之前仔细阅读[快速入门](http://baastest.droi.cn/Index/document)，并确保已经完成快速入门的所有步骤。
 
 ### Eclipse 安装SDK
 1. 下载[SDK压缩包]()，解压后将 `droianalyticssdk.jar` 包导入到工程的 `libs` 目录下；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。***（ADT17及以上不需要手动导入）***
@@ -130,7 +130,7 @@ SDK通过`Thread.UncaughtExceptionHandler`捕获程序崩溃日志，并在程�
 	DroiAnalytics.setCrashReportWithLog(true);
 	```
 ***注意：***  
-只有使用我们提供的Logger类记录的log，才能在崩溃时作为附加log信息上传，所以需要使用该类来替换Android的Log类。另外由于此功能消耗流量，不建议所有的渠道都添加此功能，建议在先期投放渠道添加此功能。
+只有使用我们提供的Logger类记录的log，才能在崩溃时作为附加log信息上传，所以需要使用该类来替换Android的Log类。另外由于此功能消耗流量，***不建议所有的渠道都打开此功能***，建议在先期投放渠道打开此功能。
 另外在开发时，可以通过以下方法来设置在LogCat中显示通过`Logger`产生的log信息（默认为true），在正式上线时设置为false。
 	``` java
 	DroiAnalytics.setSandboxMode(true);

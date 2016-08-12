@@ -80,7 +80,7 @@
 3. 在 AndroidManifest 中加入 DroiBaaS 开发平台产生的 metadata 以及渠道号 
 
     ``` xml
-    <!--Application ID 有sandbox和producation之分，在开发时使用sandbox，正式上线时切换为production，另外需要后台的切换动作-->
+    <!-- Application ID 有sand和prod之分，在开发时使用sand，正式上线时切换为prod，另外需要后台的切换操作 -->
     <meta-data android:name="com.droi.sdk.application_id" android:value="[DroiBaaS Application ID]" />
     <meta-data android:name="com.droi.sdk.platform_key" android:value="[DroiBaaS ClientKey]" />
     <meta-data android:name="com.droi.sdk.channel_name" android:value="[ChannelName]" />
@@ -89,7 +89,7 @@
     
 ### <a id="eclipse_start"></a>Eclipse 安装
 
-#### 安装aar/jar文件
+#### 安装jar文件
 
 1. 请下载最新的 DroiBaaS SDK([Core.jar](https://github.com/DroiBaaS/DroiBaaS-SDK-Android/tree/master/com/droi/sdk/Core))，把 `Core.jar` 复制到工程下的 `libs` 目录；右键工程根目录，选择`Properties` -> `Java Build Path` -> `Libraries`，然后点击`Add External JARs...` 选择指向jar的路径，点击OK，即导入成功。`（ADT17及以上不需要手动导入）`
 
@@ -131,7 +131,7 @@
 2. 加入 DroiBaaS 开发平台产生的 metadata 以及渠道号 
 
     ``` xml
-    <!--Application ID 有sandbox和producation之分，在开发时使用sandbox，正式上线时切换为production，另外需要后台的切换动作-->
+    <!-- Application ID 有sand和prod之分，在开发时使用sand，正式上线时切换为prod，另外需要后台的切换操作 -->
     <meta-data android:name="com.droi.sdk.application_id" android:value="[DroiBaaS Application ID]" />
     <meta-data android:name="com.droi.sdk.platform_key" android:value="[DroiBaaS ClientKey]" />
     <meta-data android:name="com.droi.sdk.channel_name" android:value="[ChannelName]" />
