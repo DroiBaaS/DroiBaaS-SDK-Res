@@ -130,7 +130,7 @@ SDK通过`Thread.UncaughtExceptionHandler`捕获程序崩溃日志，并在程�
 	DroiAnalytics.setCrashReportWithLog(true);
 	```
 ***注意：***  
-只有使用我们提供的Logger类记录的log，才能在崩溃时作为附加log信息上传，所以需要使用该类来替换Android的Log类。
+只有使用我们提供的Logger类记录的log，才能在崩溃时作为附加log信息上传，所以需要使用该类来替换Android的Log类。另外由于此功能消耗流量，不建议所有的渠道都添加此功能，建议在先期投放渠道添加此功能。
 另外在开发时，可以通过以下方法来设置在LogCat中显示通过`Logger`产生的log信息（默认为true），在正式上线时设置为false。
 	``` java
 	DroiAnalytics.setSandboxMode(true);
