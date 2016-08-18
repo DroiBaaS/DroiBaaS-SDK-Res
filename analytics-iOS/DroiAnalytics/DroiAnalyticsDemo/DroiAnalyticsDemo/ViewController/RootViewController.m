@@ -9,8 +9,8 @@
 #import "RootViewController.h"
 #import "RedViewController.h"
 #import <DroiCoreSDK/DroiCoreSDK.h>
-#import "DroiAnalytics.h"
-@interface RootViewController ()
+#import <DroiAnalytics/DroiAnalytics.h>
+@interface RootViewController ()<CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *appIdLabel;
 @property (weak, nonatomic) IBOutlet UILabel *channelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *didLabel;
@@ -21,12 +21,37 @@
 @property (weak, nonatomic) IBOutlet UITextField *key2;
 @property (weak, nonatomic) IBOutlet UITextField *value2;
 @property (weak, nonatomic) IBOutlet UITextField *numberTF;
+
+@property (nonatomic ,strong) CLLocationManager * locationManager;
+
 @end
 
 @implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 判断定位操作是否被允许
+    self.locationManager =[[CLLocationManager alloc]init];
+    if (![CLLocationManager locationServicesEnabled]) {
+        NSLog(@"定位服务当前可能尚未打开，请设置打开！");
+        return;
+    }
+    //如果没有授权则请求用户授权
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+    {
+        if ([CLLocationManager authorizationStatus]==kCLAuthorizationStatusNotDetermined){
+            [self.locationManager requestWhenInUseAuthorization];
+        }
+    }
+    //设置代理
+    self.locationManager.delegate=self;
+    //设置定位精度
+    self.locationManager.desiredAccuracy=kCLLocationAccuracyNearestTenMeters;
+    //定位频率,每隔多少米定位一次
+    CLLocationDistance distance = 10.0;
+    self.locationManager.distanceFilter=distance;
+    //启动跟踪定位
+    [self.locationManager startUpdatingLocation];
     self.appIdLabel.text = [DroiCore getDroiAppId];
     self.channelLabel.text = [DroiCore getChannelName];
     self.didLabel.text = [DroiCore getDroiDeviceId];
@@ -77,5 +102,25 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     [self.view endEditing:YES];
+}
+
+#pragma mark - CoreLocation Delegate
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    //此处locations存储了持续更新的位置坐标值，取最后一个值为最新位置，如果不想让其持续更新位置，则在此方法中获取到一个值之后让locationManager stopUpdatingLocation
+    CLLocation *currentLocation = [locations lastObject];
+    
+    //通过DroiAnalysis SDK上报地理位置信息
+    [DroiAnalytics setLocation:currentLocation];
+    
+    //系统会一直更新数据，直到选择停止更新，因为我们只需要获得一次经纬度即可，所以获取之后就停止更新
+    [manager stopUpdatingLocation];
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager
+       didFailWithError:(NSError *)error {
+    //获取地理位置错误处理
+    NSLog(@"An error occurred = %@", error);
 }
 @end

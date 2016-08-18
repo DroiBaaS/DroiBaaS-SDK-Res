@@ -1,34 +1,33 @@
 //
-//  BlueViewController.m
+//  GreenViewController.m
 //  DroiAnalyticsSDK
 //
 //  Created by Jon on 16/8/4.
 //  Copyright © 2016年 Droi. All rights reserved.
 //
 
-#import "BlueViewController.h"
-#import <DroiAnalytics/DroiAnalytics.h>
-@interface BlueViewController ()
+#import "GreenViewController.h"
+#import "DroiAnalytics.h"
+@interface GreenViewController ()
 
 @end
 
-@implementation BlueViewController
-
+@implementation GreenViewController
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [DroiAnalytics beginLogPageView:@"BlueViewController"];
+    [DroiAnalytics beginLogPageView:@"GreenViewController"];
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    [DroiAnalytics endLogPageView:@"BlueViewController"];
+    [DroiAnalytics endLogPageView:@"GreenViewController"];
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blueColor];
-    self.title = @"Blue";
+    self.view.backgroundColor = [UIColor greenColor];
+    self.title = @"Green";
+
 }
 
 - (void)didReceiveMemoryWarning {

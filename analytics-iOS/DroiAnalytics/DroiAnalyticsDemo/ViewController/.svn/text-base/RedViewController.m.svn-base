@@ -9,7 +9,7 @@
 #import "RedViewController.h"
 #import "BlueViewController.h"
 #import "GreenViewController.h"
-#import <DroiAnalytics/DroiAnalytics.h>
+#import "DroiAnalytics.h"
 @implementation RedViewController
 
 - (void)viewDidAppear:(BOOL)animated{

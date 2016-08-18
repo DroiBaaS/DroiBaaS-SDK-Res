@@ -7,7 +7,7 @@
 //
 
 #import "GreenViewController.h"
-#import "DroiAnalytics.h"
+#import <DroiAnalytics/DroiAnalytics.h>
 @interface GreenViewController ()
 
 @end
