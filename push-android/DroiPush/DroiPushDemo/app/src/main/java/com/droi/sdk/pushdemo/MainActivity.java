@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.GetChars;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import com.droi.sdk.push.DroiPush;
+import com.droi.sdk.push.utils.GetDeviceIdCallback;
 
 public class MainActivity extends Activity implements OnClickListener, OnCheckedChangeListener {
     private Context mContext = MainActivity.this;
@@ -34,6 +36,8 @@ public class MainActivity extends Activity implements OnClickListener, OnChecked
     private TextView mTagsViewer;
     private Button mAddTag;
     private Button mDeleteTag;
+
+    private GetDeviceIdCallback mCallback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +67,14 @@ public class MainActivity extends Activity implements OnClickListener, OnChecked
         mAppIdTextView.setText(DroiPush.getAppId(mContext));
         mAppSecretTextView.setText(DroiPush.getSecret(mContext));
         mChannelTextView.setText(DroiPush.getChannel(mContext));
-        mClientIdTextView.setText(DroiPush.getDeviceId(mContext));
+        DroiPush.getDeviceId(mContext, new GetDeviceIdCallback(){
+
+            @Override
+            public void onGetDeviceId(String s) {
+                mClientIdTextView.setText(s);
+            }
+        });
+
         updatePushState();
         showTags();
         showSilentTime();

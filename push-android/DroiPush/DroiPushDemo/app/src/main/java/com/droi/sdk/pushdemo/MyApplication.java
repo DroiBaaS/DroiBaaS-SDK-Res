@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
 import android.widget.Toast;
+
 import com.droi.sdk.push.DroiMessageHandler;
 import com.droi.sdk.push.DroiPush;
 
@@ -11,13 +12,14 @@ public class MyApplication extends Application {
 
     @Override
     public void onCreate() {
+        super.onCreate();
         initWork();
     }
 
     private void initWork() {
         DroiPush.initialize(getApplicationContext());
         DroiPush.setMessageHandler(new DroiMessageHandler() {
-            
+
             @Override
             public void onHandleCustomMessage(final Context context, final String message) {
                 // TODO Auto-generated method stub

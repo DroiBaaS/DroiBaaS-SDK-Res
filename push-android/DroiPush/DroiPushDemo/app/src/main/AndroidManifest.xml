@@ -8,9 +8,6 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="19" />
 
-    <!-- permission used in core sdk -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -32,7 +29,7 @@
             android:value="DROI_CHANNEL" />
         <meta-data
             android:name="com.droi.sdk.platform_key"
-            android:value="Mobile" />
+            android:value="aTqHWZ9eEy7mbOLD1EG18VZoLRAuHGu18VZoLRAu" />
         <!-- app info end -->
 
         <!-- main activity of demo -->
